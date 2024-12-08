@@ -1,0 +1,12 @@
+{
+  "item.weaponsexpanded.wooden_broadsword": "Wooden Broadsword",
+  "item.weaponsexpanded.golden_broadsword": "Golden Broadsword",
+  "item.weaponsexpanded.stone_broadsword": "Stone Broadsword",
+  "item.weaponsexpanded.iron_broadsword": "Iron Broadsword",
+  "item.weaponsexpanded.diamond_broadsword": "Diamond Broadsword",
+  "item.weaponsexpanded.netherite_broadsword": "Netherite Broadsword",
+
+  "advancements.nether.netherite_broadsword.title": "Awfully Broad",
+  "advancements.nether.netherite_broadsword.description": "Obtain a Netherite Broadsword"
+
+}
