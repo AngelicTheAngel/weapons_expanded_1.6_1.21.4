@@ -8,6 +8,8 @@ import net.minecraft.util.Identifier;
 
 public class ModTags {
     public static class items {
+        public static final TagKey<Item> TWO_HANDED = createTag("two_handed");
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID, name));
         }

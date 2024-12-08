@@ -1,6 +1,7 @@
 package net.angelic.weaponsexpanded.item;
 
 import net.angelic.weaponsexpanded.WeaponsExpanded;
+import net.angelic.weaponsexpanded.item.custom.KatanaItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -32,6 +33,9 @@ public class ModItems {
     public static final Item NETHERITE_BROADSWORD = registerItem("netherite_broadsword", new SwordItem(ToolMaterial.NETHERITE, 2.0F, -2.2F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"netherite_broadsword")))));
 
+    public static final Item WOODEN_KATANA = registerItem("wooden_katana", new KatanaItem(ToolMaterial.WOOD, 4.0F, -2.2F,
+            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"wooden_katana")))));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(WeaponsExpanded.MOD_ID, name), item);
     }
@@ -46,6 +50,7 @@ public class ModItems {
             entries.add(IRON_BROADSWORD);
             entries.add(DIAMOND_BROADSWORD);
             entries.add(NETHERITE_BROADSWORD);
+            entries.add(WOODEN_KATANA);
         });
     }
 }
