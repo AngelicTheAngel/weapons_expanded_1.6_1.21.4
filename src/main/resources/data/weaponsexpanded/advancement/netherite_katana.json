@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:nether/obtain_ancient_debris",
+  "criteria": {
+    "netherite_katana": {
+      "conditions": {
+        "items": [
+          {
+            "items": "weaponsexpanded:netherite_katana"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.description.netherite_katana"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "weaponsexpanded:netherite_katana"
+    },
+    "title": {
+      "translate": "advancements.netherite_katana"
+    }
+  },
+  "requirements": [
+    [
+      "netherite_katana"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

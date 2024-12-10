@@ -31,5 +31,23 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.IRON_SICKLE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DIAMOND_SICKLE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NETHERITE_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WOODEN_SCYTHE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLDEN_SCYTHE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STONE_SCYTHE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_SCYTHE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_SCYTHE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_SCYTHE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WOODEN_LONGSWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLDEN_LONGSWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STONE_LONGSWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_LONGSWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_LONGSWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_LONGSWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WOODEN_KATANA, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLDEN_KATANA, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STONE_KATANA, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_KATANA, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_KATANA, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_KATANA, Models.HANDHELD);
     }
 }

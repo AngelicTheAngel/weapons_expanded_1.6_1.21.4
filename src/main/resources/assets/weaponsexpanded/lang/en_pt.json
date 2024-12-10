@@ -1,0 +1,28 @@
+{
+  "item.weaponsexpanded.wooden_broadsword": "Knife o' timber",
+  "item.weaponsexpanded.golden_broadsword": "Knife o' gold",
+  "item.weaponsexpanded.stone_broadsword": "Knife o' stone",
+  "item.weaponsexpanded.iron_broadsword": "Knife o' iron",
+  "item.weaponsexpanded.diamond_broadsword": "Knife o' diamond",
+  "item.weaponsexpanded.netherite_broadsword": "Blackbeard's knife",
+  "item.weaponsexpanded.wooden_sickle": "Sickle o' timber",
+  "item.weaponsexpanded.golden_sickle": "Sickle o' gold",
+  "item.weaponsexpanded.stone_sickle": "Sickle o' stone",
+  "item.weaponsexpanded.iron_sickle": "Sickle o' iron",
+  "item.weaponsexpanded.diamond_sickle": "Sickle o' diamond",
+  "item.weaponsexpanded.netherite_sickle": "Blackbeard's sickle",
+  "item.weaponsexpanded.wooden_scythe": "Reaper o' timber",
+  "item.weaponsexpanded.golden_scythe": "Reaper o' gold",
+  "item.weaponsexpanded.stone_scythe": "Reaper o' stone",
+  "item.weaponsexpanded.iron_scythe": "Reaper o' iron",
+  "item.weaponsexpanded.diamond_scythe": "Reaper o' diamond",
+  "item.weaponsexpanded.netherite_scythe": "Blackbeard's reaper",
+
+  "advancements.netherite_broadsword": "Ye' call that a sword?",
+  "advancements.description.netherite_broadsword": "Get yerself Blackbeard's knife",
+  "advancements.netherite_sickle": "Makin' me hurl",
+  "advancements.description.netherite_sickle": "Get yerself Blackbeard's sickle",
+  "advancements.netherite_scythe": "Curse o' Death",
+  "advancements.description.netherite_scythe": "Get yerself Blackbeard's reaper"
+
+}
