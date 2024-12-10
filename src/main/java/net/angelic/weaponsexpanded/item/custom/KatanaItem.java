@@ -10,7 +10,10 @@ import net.minecraft.item.CrossbowItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.util.Arm;
 import net.minecraft.world.World;
+
+import java.util.prefs.NodeChangeEvent;
 
 import static net.minecraft.client.render.entity.model.EntityModelPartNames.*;
 

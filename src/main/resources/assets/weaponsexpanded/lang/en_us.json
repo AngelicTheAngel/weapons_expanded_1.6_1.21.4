@@ -5,8 +5,16 @@
   "item.weaponsexpanded.iron_broadsword": "Iron Broadsword",
   "item.weaponsexpanded.diamond_broadsword": "Diamond Broadsword",
   "item.weaponsexpanded.netherite_broadsword": "Netherite Broadsword",
+  "item.weaponsexpanded.wooden_sickle": "Wooden Sickle",
+  "item.weaponsexpanded.golden_sickle": "Golden Sickle",
+  "item.weaponsexpanded.stone_sickle": "Stone Sickle",
+  "item.weaponsexpanded.iron_sickle": "Iron Sickle",
+  "item.weaponsexpanded.diamond_sickle": "Diamond Sickle",
+  "item.weaponsexpanded.netherite_sickle": "Netherite Sickle",
 
   "advancements.netherite_broadsword": "Awfully Broad",
-  "advancements.description.netherite_broadsword": "Obtain a Netherite Broadsword"
+  "advancements.description.netherite_broadsword": "Obtain a Netherite Broadsword",
+  "advancements.netherite_sickle": "Kinda Sick",
+  "advancements.description.netherite_sickle": "Obtain a Netherite Sickle"
 
 }
