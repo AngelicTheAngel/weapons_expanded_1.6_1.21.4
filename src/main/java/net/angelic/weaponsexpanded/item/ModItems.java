@@ -105,6 +105,39 @@ public class ModItems {
     public static final Item WOODEN_HATCHET = registerItem("wooden_hatchet", new AxeItem(ToolMaterial.WOOD, 5.0F, -3.0F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"wooden_hatchet")))));
 
+    public static final Item GOLDEN_HATCHET = registerItem("golden_hatchet", new AxeItem(ToolMaterial.GOLD, 5.0F, -2.8F,
+            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"golden_hatchet")))));
+    
+    public static final Item STONE_HATCHET = registerItem("stone_hatchet", new AxeItem(ToolMaterial.STONE, 5.0F, -3.0F,
+            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"stone_hatchet")))));
+
+    public static final Item IRON_HATCHET = registerItem("iron_hatchet", new AxeItem(ToolMaterial.IRON, 5.0F, -2.9F,
+            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"iron_hatchet")))));
+
+    public static final Item DIAMOND_HATCHET = registerItem("diamond_hatchet", new AxeItem(ToolMaterial.DIAMOND, 5.0F, -2.8F,
+            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"diamond_hatchet")))));
+
+    public static final Item NETHERITE_HATCHET = registerItem("netherite_hatchet", new AxeItem(ToolMaterial.NETHERITE, 5.0F, -2.8F,
+            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"netherite_hatchet")))));
+
+    public static final Item WOODEN_HAMMER = registerItem("wooden_hammer", new SwordItem(ToolMaterial.WOOD, 7.0F, -3.3F,
+            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"wooden_hammer")))));
+
+    public static final Item GOLDEN_HAMMER = registerItem("golden_hammer", new SwordItem(ToolMaterial.GOLD, 7.0F, -3.1F,
+            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"golden_hammer")))));
+
+    public static final Item STONE_HAMMER = registerItem("stone_hammer", new SwordItem(ToolMaterial.STONE, 8.0F, -3.3F,
+            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"stone_hammer")))));
+
+    public static final Item IRON_HAMMER = registerItem("iron_hammer", new SwordItem(ToolMaterial.IRON, 7.0F, -3.2F,
+            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"iron_hammer")))));
+
+    public static final Item DIAMOND_HAMMER = registerItem("diamond_hammer", new SwordItem(ToolMaterial.DIAMOND, 6.0F, -3.1F,
+            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"diamond_hammer")))));
+
+    public static final Item NETHERITE_HAMMER = registerItem("netherite_hammer", new SwordItem(ToolMaterial.NETHERITE, 6.0F, -3.1F,
+            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"netherite_hammer")))));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(WeaponsExpanded.MOD_ID, name), item);
     }
@@ -144,6 +177,17 @@ public class ModItems {
             entries.add(DIAMOND_KATANA);
             entries.add(NETHERITE_KATANA);
             entries.add(WOODEN_HATCHET);
+            entries.add(GOLDEN_HATCHET);
+            entries.add(STONE_HATCHET);
+            entries.add(IRON_HATCHET);
+            entries.add(DIAMOND_HATCHET);
+            entries.add(NETHERITE_HATCHET);
+            entries.add(WOODEN_HAMMER);
+            entries.add(GOLDEN_HAMMER);
+            entries.add(STONE_HAMMER);
+            entries.add(IRON_HAMMER);
+            entries.add(DIAMOND_HAMMER);
+            entries.add(NETHERITE_HAMMER);
         });
     }
 }
