@@ -209,8 +209,18 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.DIAMOND_KATANA)
                 .add(ModItems.NETHERITE_KATANA);
         getOrCreateTagBuilder(ItemTags.AXES)
-                .add(ModItems.WOODEN_HATCHET);
+                .add(ModItems.WOODEN_HATCHET)
+                .add(ModItems.GOLDEN_HATCHET)
+                .add(ModItems.STONE_HATCHET)
+                .add(ModItems.IRON_HATCHET)
+                .add(ModItems.DIAMOND_HATCHET)
+                .add(ModItems.NETHERITE_HATCHET);
         getOrCreateTagBuilder(ItemTags.MINING_ENCHANTABLE)
-                .add(ModItems.WOODEN_HATCHET);
+                .add(ModItems.WOODEN_HATCHET)
+                .add(ModItems.GOLDEN_HATCHET)
+                .add(ModItems.STONE_HATCHET)
+                .add(ModItems.IRON_HATCHET)
+                .add(ModItems.DIAMOND_HATCHET)
+                .add(ModItems.NETHERITE_HATCHET);
     }
 }
