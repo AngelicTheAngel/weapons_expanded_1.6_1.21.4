@@ -47,7 +47,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.STONE_KATANA)
                 .add(ModItems.IRON_KATANA)
                 .add(ModItems.DIAMOND_KATANA)
-                .add(ModItems.NETHERITE_KATANA);
+                .add(ModItems.NETHERITE_KATANA)
+                .add(ModItems.WOODEN_HATCHET);
         getOrCreateTagBuilder(ItemTags.DURABILITY_ENCHANTABLE)
                 .add(ModItems.WOODEN_BROADSWORD)
                 .add(ModItems.GOLDEN_BROADSWORD)
@@ -78,7 +79,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.STONE_KATANA)
                 .add(ModItems.IRON_KATANA)
                 .add(ModItems.DIAMOND_KATANA)
-                .add(ModItems.NETHERITE_KATANA);
+                .add(ModItems.NETHERITE_KATANA)
+                .add(ModItems.WOODEN_HATCHET);
         getOrCreateTagBuilder(ItemTags.WEAPON_ENCHANTABLE)
                 .add(ModItems.WOODEN_BROADSWORD)
                 .add(ModItems.GOLDEN_BROADSWORD)
@@ -109,7 +111,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.STONE_KATANA)
                 .add(ModItems.IRON_KATANA)
                 .add(ModItems.DIAMOND_KATANA)
-                .add(ModItems.NETHERITE_KATANA);
+                .add(ModItems.NETHERITE_KATANA)
+                .add(ModItems.WOODEN_HATCHET);
         getOrCreateTagBuilder(ItemTags.FIRE_ASPECT_ENCHANTABLE)
                 .add(ModItems.WOODEN_BROADSWORD)
                 .add(ModItems.GOLDEN_BROADSWORD)
@@ -140,7 +143,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.STONE_KATANA)
                 .add(ModItems.IRON_KATANA)
                 .add(ModItems.DIAMOND_KATANA)
-                .add(ModItems.NETHERITE_KATANA);
+                .add(ModItems.NETHERITE_KATANA)
+                .add(ModItems.WOODEN_HATCHET);
         getOrCreateTagBuilder(ItemTags.SHARP_WEAPON_ENCHANTABLE)
                 .add(ModItems.WOODEN_BROADSWORD)
                 .add(ModItems.GOLDEN_BROADSWORD)
@@ -171,7 +175,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.STONE_KATANA)
                 .add(ModItems.IRON_KATANA)
                 .add(ModItems.DIAMOND_KATANA)
-                .add(ModItems.NETHERITE_KATANA);
+                .add(ModItems.NETHERITE_KATANA)
+                .add(ModItems.WOODEN_HATCHET);
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.WOODEN_BROADSWORD)
                 .add(ModItems.GOLDEN_BROADSWORD)
@@ -203,5 +208,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.IRON_KATANA)
                 .add(ModItems.DIAMOND_KATANA)
                 .add(ModItems.NETHERITE_KATANA);
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.WOODEN_HATCHET);
+        getOrCreateTagBuilder(ItemTags.MINING_ENCHANTABLE)
+                .add(ModItems.WOODEN_HATCHET);
     }
 }

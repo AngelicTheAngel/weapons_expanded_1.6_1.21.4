@@ -1,7 +1,9 @@
 // 1.21.4	-999999999-01-01T00:00:00	Weapons Expanded/Tags for minecraft:item
-c7e4d7205fa0778463edcec95e77aee01add4c2b data/minecraft/tags/item/enchantable/durability.json
-c7e4d7205fa0778463edcec95e77aee01add4c2b data/minecraft/tags/item/enchantable/fire_aspect.json
-c7e4d7205fa0778463edcec95e77aee01add4c2b data/minecraft/tags/item/enchantable/sharp_weapon.json
-c7e4d7205fa0778463edcec95e77aee01add4c2b data/minecraft/tags/item/enchantable/sword.json
-c7e4d7205fa0778463edcec95e77aee01add4c2b data/minecraft/tags/item/enchantable/weapon.json
+c65154bd2d4501719f2fcc685de04e4cd992325b data/minecraft/tags/item/axes.json
+b429ac83449cb6a53b5f60d133807f45f3817468 data/minecraft/tags/item/enchantable/durability.json
+b429ac83449cb6a53b5f60d133807f45f3817468 data/minecraft/tags/item/enchantable/fire_aspect.json
+c65154bd2d4501719f2fcc685de04e4cd992325b data/minecraft/tags/item/enchantable/mining.json
+b429ac83449cb6a53b5f60d133807f45f3817468 data/minecraft/tags/item/enchantable/sharp_weapon.json
+b429ac83449cb6a53b5f60d133807f45f3817468 data/minecraft/tags/item/enchantable/sword.json
+b429ac83449cb6a53b5f60d133807f45f3817468 data/minecraft/tags/item/enchantable/weapon.json
 c7e4d7205fa0778463edcec95e77aee01add4c2b data/minecraft/tags/item/swords.json

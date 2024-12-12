@@ -1,12 +1,9 @@
 package net.angelic.weaponsexpanded.item;
 
 import net.angelic.weaponsexpanded.WeaponsExpanded;
-import net.angelic.weaponsexpanded.item.custom.KatanaItem;
+import net.angelic.weaponsexpanded.item.custom.TwoHandedSwordItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterial;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -87,23 +84,26 @@ public class ModItems {
     public static final Item NETHERITE_LONGSWORD = registerItem("netherite_longsword", new SwordItem(ToolMaterial.NETHERITE, 6.0F, -2.9F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"netherite_longsword")))));
 
-    public static final Item WOODEN_KATANA = registerItem("wooden_katana", new KatanaItem(ToolMaterial.WOOD, 3.0F, -2.2F,
+    public static final Item WOODEN_KATANA = registerItem("wooden_katana", new TwoHandedSwordItem(ToolMaterial.WOOD, 3.0F, -2.2F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"wooden_katana")))));
 
-    public static final Item GOLDEN_KATANA = registerItem("golden_katana", new KatanaItem(ToolMaterial.GOLD, 3.0F, -2.2F,
+    public static final Item GOLDEN_KATANA = registerItem("golden_katana", new TwoHandedSwordItem(ToolMaterial.GOLD, 3.0F, -2.2F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"golden_katana")))));
 
-    public static final Item STONE_KATANA = registerItem("stone_katana", new KatanaItem(ToolMaterial.STONE, 3.0F, -2.2F,
+    public static final Item STONE_KATANA = registerItem("stone_katana", new TwoHandedSwordItem(ToolMaterial.STONE, 3.0F, -2.2F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"stone_katana")))));
 
-    public static final Item IRON_KATANA = registerItem("iron_katana", new KatanaItem(ToolMaterial.IRON, 3.0F, -2.2F,
+    public static final Item IRON_KATANA = registerItem("iron_katana", new TwoHandedSwordItem(ToolMaterial.IRON, 3.0F, -2.2F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"iron_katana")))));
 
-    public static final Item DIAMOND_KATANA = registerItem("diamond_katana", new KatanaItem(ToolMaterial.DIAMOND, 3.0F, -2.2F,
+    public static final Item DIAMOND_KATANA = registerItem("diamond_katana", new TwoHandedSwordItem(ToolMaterial.DIAMOND, 3.0F, -2.2F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"diamond_katana")))));
 
-    public static final Item NETHERITE_KATANA = registerItem("netherite_katana", new KatanaItem(ToolMaterial.NETHERITE, 3.0F, -2.2F,
+    public static final Item NETHERITE_KATANA = registerItem("netherite_katana", new TwoHandedSwordItem(ToolMaterial.NETHERITE, 3.0F, -2.2F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"netherite_katana")))));
+
+    public static final Item WOODEN_HATCHET = registerItem("wooden_hatchet", new AxeItem(ToolMaterial.WOOD, 5.0F, -3.0F,
+            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"wooden_hatchet")))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(WeaponsExpanded.MOD_ID, name), item);
@@ -143,6 +143,7 @@ public class ModItems {
             entries.add(IRON_KATANA);
             entries.add(DIAMOND_KATANA);
             entries.add(NETHERITE_KATANA);
+            entries.add(WOODEN_HATCHET);
         });
     }
 }

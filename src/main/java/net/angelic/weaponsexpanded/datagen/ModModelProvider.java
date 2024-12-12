@@ -49,5 +49,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.IRON_KATANA, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DIAMOND_KATANA, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NETHERITE_KATANA, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WOODEN_HATCHET, Models.HANDHELD);
     }
 }
