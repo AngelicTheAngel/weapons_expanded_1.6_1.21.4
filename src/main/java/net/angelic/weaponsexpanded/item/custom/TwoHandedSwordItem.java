@@ -14,7 +14,7 @@ public class TwoHandedSwordItem extends SwordItem {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if (selected) {
-            entity.setOnFireForTicks(1);
+
         }
         super.inventoryTick(stack, world, entity, slot, selected);
     }

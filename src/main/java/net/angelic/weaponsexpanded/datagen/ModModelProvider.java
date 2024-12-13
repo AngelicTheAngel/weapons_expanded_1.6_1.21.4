@@ -50,5 +50,28 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DIAMOND_KATANA, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NETHERITE_KATANA, Models.HANDHELD);
         itemModelGenerator.register(ModItems.WOODEN_HATCHET, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLDEN_HATCHET, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STONE_HATCHET, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_HATCHET, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_HATCHET, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_HATCHET, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WOODEN_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLDEN_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STONE_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WOODEN_BATTLEAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLDEN_BATTLEAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STONE_BATTLEAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_BATTLEAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_BATTLEAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_BATTLEAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WOODEN_GREATSWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLDEN_GREATSWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STONE_GREATSWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_GREATSWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_GREATSWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_GREATSWORD, Models.HANDHELD);
     }
 }

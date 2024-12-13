@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:nether/obtain_ancient_debris",
+  "criteria": {
+    "netherite_hatchet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "weaponsexpanded:netherite_hatchet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.description.netherite_hatchet"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "weaponsexpanded:netherite_hatchet"
+    },
+    "title": {
+      "translate": "advancements.netherite_hatchet"
+    }
+  },
+  "requirements": [
+    [
+      "netherite_hatchet"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
