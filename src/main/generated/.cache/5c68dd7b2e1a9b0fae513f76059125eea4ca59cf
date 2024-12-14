@@ -3,7 +3,7 @@ dca9d204de62c259b57565ecb9df45c1340993a1 data/minecraft/tags/item/axes.json
 6d9619b84705857fa3b63946ecdd8ad9a0d77298 data/minecraft/tags/item/enchantable/durability.json
 6d9619b84705857fa3b63946ecdd8ad9a0d77298 data/minecraft/tags/item/enchantable/fire_aspect.json
 dca9d204de62c259b57565ecb9df45c1340993a1 data/minecraft/tags/item/enchantable/mining.json
-6d9619b84705857fa3b63946ecdd8ad9a0d77298 data/minecraft/tags/item/enchantable/sharp_weapon.json
+acd6e3b1a514557f6cfabf32254ff1623eba855f data/minecraft/tags/item/enchantable/sharp_weapon.json
 6d9619b84705857fa3b63946ecdd8ad9a0d77298 data/minecraft/tags/item/enchantable/sword.json
 6d9619b84705857fa3b63946ecdd8ad9a0d77298 data/minecraft/tags/item/enchantable/weapon.json
 5f07c254bb1ea9d5504ea52ea9965a330ba03959 data/minecraft/tags/item/swords.json
