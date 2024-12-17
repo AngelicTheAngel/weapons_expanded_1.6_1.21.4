@@ -4,6 +4,9 @@ import com.mojang.serialization.MapCodec;
 import net.minecraft.enchantment.EnchantmentEffectContext;
 import net.minecraft.enchantment.effect.EnchantmentEntityEffect;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.Vec3d;
 
@@ -12,11 +15,15 @@ public record WitheringEnchantmentEffect() implements EnchantmentEntityEffect {
 
     @Override
     public void apply(ServerWorld world, int level, EnchantmentEffectContext context, Entity user, Vec3d pos) {
-        if (level == 1) {
-            user.kill(world);
-        }
-        if (level == 2) {
-            user.setOnFireForTicks(20);
+        if (user instanceof LivingEntity) {
+            StatusEffectInstance witherEffectl1 = new StatusEffectInstance(StatusEffects.WITHER, 100, 1);
+            StatusEffectInstance witherEffectl2 = new StatusEffectInstance(StatusEffects.WITHER, 160, 1);
+            if (level == 1) {
+                ((LivingEntity) user).addStatusEffect(witherEffectl1);
+            }
+            if (level == 2) {
+                ((LivingEntity) user).addStatusEffect(witherEffectl2);
+            }
         }
     }
 

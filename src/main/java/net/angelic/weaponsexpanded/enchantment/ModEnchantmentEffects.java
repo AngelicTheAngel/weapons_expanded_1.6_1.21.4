@@ -10,9 +10,9 @@ import net.minecraft.util.Identifier;
 
 public class ModEnchantmentEffects {
     public static final MapCodec<? extends EnchantmentEntityEffect> WITHERING =
-            regsterEntityEffect("withering", WitheringEnchantmentEffect.CODEC);
+            registerEntityEffect("withering", WitheringEnchantmentEffect.CODEC);
 
-    private static MapCodec<? extends EnchantmentEntityEffect> regsterEntityEffect(String name, MapCodec<? extends EnchantmentEntityEffect> codec) {
+    private static MapCodec<? extends EnchantmentEntityEffect> registerEntityEffect(String name, MapCodec<? extends EnchantmentEntityEffect> codec) {
         return Registry.register(Registries.ENCHANTMENT_ENTITY_EFFECT_TYPE, Identifier.of(WeaponsExpanded.MOD_ID, name), codec);
     }
 
