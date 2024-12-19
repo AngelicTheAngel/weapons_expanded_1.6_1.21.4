@@ -55,6 +55,10 @@
   "item.weaponsexpanded.netherite_greatsword": "Netherite Greatsword",
 
   "enchantment.weaponsexpanded.withering": "Withering",
+  "enchantment.weaponsexpanded.polluting": "Polluting",
+  "enchantment.weaponsexpanded.frostbite": "Frostbite",
+
+  "effect.weaponsexpanded.frostbite": "Frostbite",
 
   "advancements.netherite_broadsword": "Awfully Broad",
   "advancements.description.netherite_broadsword": "Obtain a Netherite Broadsword",

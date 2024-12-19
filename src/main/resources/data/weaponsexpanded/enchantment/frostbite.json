@@ -1,14 +1,14 @@
 {
   "anvil_cost": 4,
   "description": {
-    "translate": "enchantment.weaponsexpanded.withering"
+    "translate": "enchantment.weaponsexpanded.frostbite"
   },
   "effects": {
     "minecraft:post_attack": [
       {
         "affected": "victim",
         "effect": {
-          "type": "weaponsexpanded:withering",
+          "type": "weaponsexpanded:frostbite",
           "duration": {
             "type": "minecraft:linear",
             "base": 4.0,

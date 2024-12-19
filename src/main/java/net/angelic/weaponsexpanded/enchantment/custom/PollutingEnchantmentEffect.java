@@ -10,19 +10,19 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.Vec3d;
 
-public record WitheringEnchantmentEffect() implements EnchantmentEntityEffect {
-    public static final MapCodec<WitheringEnchantmentEffect> CODEC = MapCodec.unit(WitheringEnchantmentEffect::new);
+public record PollutingEnchantmentEffect() implements EnchantmentEntityEffect {
+    public static final MapCodec<PollutingEnchantmentEffect> CODEC = MapCodec.unit(PollutingEnchantmentEffect::new);
 
     @Override
     public void apply(ServerWorld world, int level, EnchantmentEffectContext context, Entity user, Vec3d pos) {
         if (user instanceof LivingEntity) {
-            StatusEffectInstance witherEffectL1 = new StatusEffectInstance(StatusEffects.WITHER, 100, 1);
-            StatusEffectInstance witherEffectL2 = new StatusEffectInstance(StatusEffects.WITHER, 160, 1);
+            StatusEffectInstance pollutingEffectL1 = new StatusEffectInstance(StatusEffects.POISON, 160, 0);
+            StatusEffectInstance pollutingEffectL2 = new StatusEffectInstance(StatusEffects.POISON, 300, 0);
             if (level == 1) {
-                ((LivingEntity) user).addStatusEffect(witherEffectL1);
+                ((LivingEntity) user).addStatusEffect(pollutingEffectL1);
             }
             if (level == 2) {
-                ((LivingEntity) user).addStatusEffect(witherEffectL2);
+                ((LivingEntity) user).addStatusEffect(pollutingEffectL2);
             }
         }
     }
