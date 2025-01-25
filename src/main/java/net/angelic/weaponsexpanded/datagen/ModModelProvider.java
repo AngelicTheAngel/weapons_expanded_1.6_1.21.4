@@ -73,5 +73,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.IRON_GREATSWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DIAMOND_GREATSWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NETHERITE_GREATSWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_SPEAR, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_RAPIER, Models.HANDHELD);
     }
 }

@@ -2,6 +2,7 @@ package net.angelic.weaponsexpanded.item;
 
 import net.angelic.weaponsexpanded.WeaponsExpanded;
 import net.angelic.weaponsexpanded.item.custom.BluntWeaponItem;
+import net.angelic.weaponsexpanded.item.custom.PierceWeaponItem;
 import net.angelic.weaponsexpanded.item.custom.TwoHandedHeavySwordItem;
 import net.angelic.weaponsexpanded.item.custom.TwoHandedSwordItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -62,10 +63,10 @@ public class ModItems {
     public static final Item IRON_SCYTHE = registerItem("iron_scythe", new SwordItem(ToolMaterial.IRON, 4.0F, -2.5F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"iron_scythe")))));
 
-    public static final Item DIAMOND_SCYTHE = registerItem("diamond_scythe", new SwordItem(ToolMaterial.DIAMOND, 4.0F, -2.5F,
+    public static final Item DIAMOND_SCYTHE = registerItem("diamond_scythe", new SwordItem(ToolMaterial.DIAMOND, 4.5F, -2.5F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"diamond_scythe")))));
 
-    public static final Item NETHERITE_SCYTHE = registerItem("netherite_scythe", new SwordItem(ToolMaterial.NETHERITE, 4.0F, -2.5F,
+    public static final Item NETHERITE_SCYTHE = registerItem("netherite_scythe", new SwordItem(ToolMaterial.NETHERITE, 4.5F, -2.5F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"netherite_scythe")))));
 
     public static final Item WOODEN_LONGSWORD = registerItem("wooden_longsword", new SwordItem(ToolMaterial.WOOD, 6.0F, -2.9F,
@@ -176,6 +177,12 @@ public class ModItems {
     public static final Item NETHERITE_GREATSWORD = registerItem("netherite_greatsword", new TwoHandedHeavySwordItem(ToolMaterial.NETHERITE, 8.0F, -3.1F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"netherite_greatsword")))));
 
+    public static final Item IRON_SPEAR = registerItem("iron_spear", new PierceWeaponItem(ToolMaterial.IRON, 4.5F, -2.7F,
+            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"iron_spear")))));
+
+    public static final Item IRON_RAPIER = registerItem("iron_rapier", new PierceWeaponItem(ToolMaterial.IRON, 2.0F, -2.2F,
+            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"iron_rapier")))));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(WeaponsExpanded.MOD_ID, name), item);
     }
@@ -238,6 +245,8 @@ public class ModItems {
             entries.add(IRON_GREATSWORD);
             entries.add(DIAMOND_GREATSWORD);
             entries.add(NETHERITE_GREATSWORD);
+            entries.add(IRON_SPEAR);
+            entries.add(IRON_RAPIER);
         });
     }
 }
