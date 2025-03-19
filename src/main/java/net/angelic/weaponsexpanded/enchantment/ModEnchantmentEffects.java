@@ -2,6 +2,7 @@ package net.angelic.weaponsexpanded.enchantment;
 
 import com.mojang.serialization.MapCodec;
 import net.angelic.weaponsexpanded.WeaponsExpanded;
+import net.angelic.weaponsexpanded.enchantment.custom.FreezeEnchantmentEffect;
 import net.angelic.weaponsexpanded.enchantment.custom.FrostbiteEnchantmentEffect;
 import net.angelic.weaponsexpanded.enchantment.custom.PollutingEnchantmentEffect;
 import net.angelic.weaponsexpanded.enchantment.custom.WitheringEnchantmentEffect;
@@ -17,6 +18,8 @@ public class ModEnchantmentEffects {
             registerEntityEffect("polluting", PollutingEnchantmentEffect.CODEC);
     public static final MapCodec<? extends EnchantmentEntityEffect> FROSTBITE =
             registerEntityEffect("frostbite", FrostbiteEnchantmentEffect.CODEC);
+    public static final MapCodec<? extends EnchantmentEntityEffect> FREEZE =
+            registerEntityEffect("freeze", FreezeEnchantmentEffect.CODEC);
 
 
     private static MapCodec<? extends EnchantmentEntityEffect> registerEntityEffect(String name, MapCodec<? extends EnchantmentEntityEffect> codec) {

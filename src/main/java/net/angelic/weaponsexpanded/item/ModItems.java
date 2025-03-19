@@ -123,22 +123,22 @@ public class ModItems {
     public static final Item NETHERITE_HATCHET = registerItem("netherite_hatchet", new AxeItem(ToolMaterial.NETHERITE, 4.0F, -2.8F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"netherite_hatchet")))));
 
-    public static final Item WOODEN_HAMMER = registerItem("wooden_hammer", new BluntWeaponItem(ToolMaterial.WOOD, 7.0F, -3.3F,
+    public static final Item WOODEN_HAMMER = registerItem("wooden_hammer", new SwordItem(ToolMaterial.WOOD, 7.0F, -3.3F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"wooden_hammer")))));
 
-    public static final Item GOLDEN_HAMMER = registerItem("golden_hammer", new BluntWeaponItem(ToolMaterial.GOLD, 7.0F, -3.1F,
+    public static final Item GOLDEN_HAMMER = registerItem("golden_hammer", new SwordItem(ToolMaterial.GOLD, 7.0F, -3.1F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"golden_hammer")))));
 
-    public static final Item STONE_HAMMER = registerItem("stone_hammer", new BluntWeaponItem(ToolMaterial.STONE, 8.0F, -3.3F,
+    public static final Item STONE_HAMMER = registerItem("stone_hammer", new SwordItem(ToolMaterial.STONE, 8.0F, -3.3F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"stone_hammer")))));
 
-    public static final Item IRON_HAMMER = registerItem("iron_hammer", new BluntWeaponItem(ToolMaterial.IRON, 7.0F, -3.2F,
+    public static final Item IRON_HAMMER = registerItem("iron_hammer", new SwordItem(ToolMaterial.IRON, 7.0F, -3.2F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"iron_hammer")))));
 
-    public static final Item DIAMOND_HAMMER = registerItem("diamond_hammer", new BluntWeaponItem(ToolMaterial.DIAMOND, 6.0F, -3.1F,
+    public static final Item DIAMOND_HAMMER = registerItem("diamond_hammer", new SwordItem(ToolMaterial.DIAMOND, 6.0F, -3.1F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"diamond_hammer")))));
 
-    public static final Item NETHERITE_HAMMER = registerItem("netherite_hammer", new BluntWeaponItem(ToolMaterial.NETHERITE, 6.0F, -3.1F,
+    public static final Item NETHERITE_HAMMER = registerItem("netherite_hammer", new SwordItem(ToolMaterial.NETHERITE, 6.0F, -3.1F,
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(WeaponsExpanded.MOD_ID,"netherite_hammer")))));
 
     public static final Item WOODEN_BATTLEAXE = registerItem("wooden_battleaxe", new AxeItem(ToolMaterial.WOOD, 8.0F, -3.4F,

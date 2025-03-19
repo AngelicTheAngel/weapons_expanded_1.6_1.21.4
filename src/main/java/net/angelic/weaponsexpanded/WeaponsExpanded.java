@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 public class WeaponsExpanded implements ModInitializer {
 	public static final String MOD_ID = "weaponsexpanded";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-// Putting this here so I can commit.
+
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
