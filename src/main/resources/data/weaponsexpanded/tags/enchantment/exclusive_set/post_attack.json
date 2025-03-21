@@ -3,8 +3,6 @@
     "minecraft:fire_aspect",
     "weaponsexpanded:withering",
     "weaponsexpanded:polluting",
-    "weaponsexpanded:frostbite",
-    "minecraft:flame",
-    "weaponsexpanded:freeze"
+    "weaponsexpanded:frostbite"
   ]
 }

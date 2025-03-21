@@ -2,10 +2,7 @@ package net.angelic.weaponsexpanded.enchantment;
 
 import com.mojang.serialization.MapCodec;
 import net.angelic.weaponsexpanded.WeaponsExpanded;
-import net.angelic.weaponsexpanded.enchantment.custom.FreezeEnchantmentEffect;
-import net.angelic.weaponsexpanded.enchantment.custom.FrostbiteEnchantmentEffect;
-import net.angelic.weaponsexpanded.enchantment.custom.PollutingEnchantmentEffect;
-import net.angelic.weaponsexpanded.enchantment.custom.WitheringEnchantmentEffect;
+import net.angelic.weaponsexpanded.enchantment.custom.*;
 import net.minecraft.enchantment.effect.EnchantmentEntityEffect;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -20,7 +17,8 @@ public class ModEnchantmentEffects {
             registerEntityEffect("frostbite", FrostbiteEnchantmentEffect.CODEC);
     public static final MapCodec<? extends EnchantmentEntityEffect> FREEZE =
             registerEntityEffect("freeze", FreezeEnchantmentEffect.CODEC);
-
+    public static final MapCodec<? extends EnchantmentEntityEffect> EXPLODING =
+            registerEntityEffect("exploding", ExplodingEnchantmentEffect.CODEC);
 
     private static MapCodec<? extends EnchantmentEntityEffect> registerEntityEffect(String name, MapCodec<? extends EnchantmentEntityEffect> codec) {
         return Registry.register(Registries.ENCHANTMENT_ENTITY_EFFECT_TYPE, Identifier.of(WeaponsExpanded.MOD_ID, name), codec);

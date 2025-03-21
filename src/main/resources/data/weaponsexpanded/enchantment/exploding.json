@@ -1,14 +1,14 @@
 {
   "anvil_cost": 4,
   "description": {
-    "translate": "enchantment.weaponsexpanded.freeze"
+    "translate": "enchantment.weaponsexpanded.exploding"
   },
   "effects": {
     "minecraft:post_attack": [
       {
         "affected": "victim",
         "effect": {
-          "type": "weaponsexpanded:freeze",
+          "type": "weaponsexpanded:exploding",
           "duration": {
             "type": "minecraft:linear",
             "base": 4.0,
@@ -25,7 +25,7 @@
       }
     ]
   },
-  "exclusive_set": "#weaponsexpanded:exclusive_set/bow_effects",
+  "exclusive_set": "#weaponsexpanded:exclusive_set/bow_power",
   "max_cost": {
     "base": 50,
     "per_level_above_first": 0
