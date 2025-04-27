@@ -4,10 +4,12 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
+import net.minecraft.item.consume.UseAction;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 
 public class TwoHandedSwordItem extends SwordItem {
+
     public TwoHandedSwordItem(ToolMaterial material, float attackDamage, float attackSpeed, Settings settings) {
         super(material, attackDamage, attackSpeed, settings);
     }
@@ -23,4 +25,5 @@ public class TwoHandedSwordItem extends SwordItem {
         }
         super.inventoryTick(stack, world, entity, slot, selected);
     }
+
 }
