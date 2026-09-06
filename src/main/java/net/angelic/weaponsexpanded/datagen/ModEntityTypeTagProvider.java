@@ -4,7 +4,6 @@ import net.angelic.weaponsexpanded.util.tags.ModEntityTypeTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.world.entity.EntityTypeIds;
 import org.jspecify.annotations.NonNull;
 
