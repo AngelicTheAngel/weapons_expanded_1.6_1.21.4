@@ -71,6 +71,13 @@ public final class WeaponsExpandedConfigScreen {
                 .setSaveConsumer(v -> cfg.enableEntityTypeChanges = v)
                 .build());
 
+        general.addEntry(eb.startBooleanToggle(Component.translatable("config.weaponsexpanded.option.enableExtraNetherEntities"), cfg.enableExtraNetherEntities)
+                .setDefaultValue(false)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.enableExtraNetherEntities.description"))
+                .requireRestart()
+                .setSaveConsumer(v -> cfg.enableExtraNetherEntities = v)
+                .build());
+
 //        general.addEntry(eb.startIntSlider(Component.translatable("config.weaponsexpanded.option.ritualDaggerMaxLevel"), cfg.ritualDaggerMaxLevel, 1, 4)
 //                .setDefaultValue(2)
 //                .setSaveConsumer(v -> cfg.ritualDaggerMaxLevel = v)

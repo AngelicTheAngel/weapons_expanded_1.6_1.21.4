@@ -189,6 +189,8 @@
   "config.weaponsexpanded.option.frostbitePotionRecipe": "Enable Frostbite Potion Recipe",
   "config.weaponsexpanded.option.enableEntityTypeChanges": "Enable Entity Type Changes",
   "config.weaponsexpanded.option.enableEntityTypeChanges.description": "Adds Creepers to arthropods and adds Wardens and Vex to undead",
+  "config.weaponsexpanded.option.enableExtraNetherEntities": "Enable Extra Nether Entities",
+  "config.weaponsexpanded.option.enableExtraNetherEntities.description": "Adds Zombified Piglins and Wither Skeletons to Nether Mobs",
 
   "key.category.weaponsexpanded.general": "Weapons Expanded",
   "key.weaponsexpanded.toggle_bastard_sword_mode": "Toggle Weapon Mode"
