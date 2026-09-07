@@ -186,7 +186,7 @@
   "config.weaponsexpanded.option.enableWeaponsmithTrades": "Enable Weaponsmith Trades",
   "config.weaponsexpanded.option.enableWeaponsmithTrades.description": "Allows Weaponsmiths to sell custom weapons",
   "config.weaponsexpanded.option.altTwoHandedSwordHandling": "Alt Two-Handed Sword Handling",
-  "config.weaponsexpanded.option.altTwoHandedSwordHandling.description": "Changed the way two-handed weapon logic is handled",
+  "config.weaponsexpanded.option.altTwoHandedSwordHandling.description": "Changes the way two-handed weapon logic is handled",
   "config.weaponsexpanded.option.disableExtraDurabilityDamageForAxes": "Disable Extra Durability Damage for Axes",
   "config.weaponsexpanded.option.disableExtraDurabilityDamageForAxes.description": "Disables the extra durability loss that occurs when attacking something with an axe",
   "config.weaponsexpanded.option.dynamiteArrowsDestroyBlocks": "Dynamite Arrows Destroy Blocks",

@@ -90,6 +90,13 @@
   "item.weaponsexpanded.iron_morningstar": "Spiky ball o' steel",
   "item.weaponsexpanded.diamond_morningstar": "Spiky ball o' diamond",
   "item.weaponsexpanded.netherite_morningstar": "Blackbeard's spiky ball",
+  "item.weaponsexpanded.wooden_halberd": "Spearaxe o' timber",
+  "item.weaponsexpanded.golden_halberd": "Spearaxe o' gold",
+  "item.weaponsexpanded.stone_halberd": "Spearaxe o' rock",
+  "item.weaponsexpanded.copper_halberd": "Spearaxe o' copper",
+  "item.weaponsexpanded.iron_halberd": "Spearaxe o' steel",
+  "item.weaponsexpanded.diamond_halberd": "Spearaxe o' diamond",
+  "item.weaponsexpanded.netherite_halberd": "Blackbeard's spearaxe",
 
   "item.weaponsexpanded.heavy_arrow": "Heavy bolt",
   "item.weaponsexpanded.explosive_arrow": "Explodin' bolt",
@@ -108,6 +115,8 @@
   "enchantment.weaponsexpanded.leech": "Bloodsucker",
   "enchantment.weaponsexpanded.cleaving": "Cleaving",
   "enchantment.weaponsexpanded.capacity": "Capacity",
+  "enchantment.weaponsexpanded.nethers_scourge": "Nether's Scourge",
+  "enchantment.weaponsexpanded.ends_bane": "End's Bane",
   "enchantment.weaponsexpanded.withering.desc": "Applies the wither effect when hitting mobs and players",
   "enchantment.weaponsexpanded.polluting.desc": "Applies the poison effect when hitting mobs and players",
   "enchantment.weaponsexpanded.frostbite.desc": "Applies the frostbite effect when hitting mobs and players",
@@ -115,6 +124,8 @@
   "enchantment.weaponsexpanded.leech.desc": "Grants healing when blocking damage, in exchange for extra durability",
   "enchantment.weaponsexpanded.cleaving.desc": "Increases how long shields are stunned when stuck down",
   "enchantment.weaponsexpanded.capacity.desc": "Increases the magazine size of chain crossbows",
+  "enchantment.weaponsexpanded.nethers_scourge.desc": "Increases damage against Nether mobs such as Piglins and Blazes",
+  "enchantment.weaponsexpanded.ends_bane.desc": "Increases damage against End mobs such as Endermen and Shulkers",
 
   "effect.weaponsexpanded.frostbite": "Coldness",
 
@@ -126,39 +137,6 @@
   "advancements.weaponsexpanded.weapons_expanded.description": "Get yerself all of Blackbeard's weapons",
 
   "tooltip.weaponsexpanded.twohandedsword": "Two-Hooked",
-  "tooltip.weaponsexpanded.chain_crossbow_shots": "Shots: %s/%s",
-  "tooltip.weaponsexpanded.warhammer.blunt_side": "Blunt",
-  "tooltip.weaponsexpanded.warhammer.sharp_side": "Sharp",
 
-  "item.modifiers.bothhands": "If in Both Yer Hooks:",
-
-  "subtitles.weaponsexpanded.item.chain_crossbow.chamber": "Chain Crossbow chambers",
-  "subtitles.weaponsexpanded.item.chain_crossbow.full": "Chain Crossbow is full",
-
-  "config.weaponsexpanded.title": "Weapons Expanded Config",
-  "config.weaponsexpanded.category.general": "General",
-  "config.weaponsexpanded.option.enableCustomLootTables": "Enable Custom Loot Tables",
-  "config.weaponsexpanded.option.enableEntityMeleeEquipment": "Enable Entity Melee Equipment",
-  "config.weaponsexpanded.option.enableTrialChamberMeleeEquipment": "Enable Trial Chamber Melee Equipment",
-  "config.weaponsexpanded.option.enableWeaponsmithTrades": "Enable Weaponsmith Trades",
-  "config.weaponsexpanded.option.altTwoHandedSwordHandling": "Alt Two-Handed Sword Handling",
-  "config.weaponsexpanded.option.disableExtraDurabilityDamageForAxes": "Disable Extra Durability Damage for Axes",
-  "config.weaponsexpanded.option.dynamiteArrowsDestroyBlocks": "Dynamite Arrows Destroy Blocks",
-  "config.weaponsexpanded.option.chainCrossbowMagazineSize": "Chain Crossbow Magazine Size",
-
-  "key.category.weaponsexpanded.general": "Weapons Expanded",
-  "key.weaponsexpanded.toggle_bastard_sword_mode": "Toggle Weapon Mode",
-
-  "tag.item.weaponsexpanded.blunt": "Blunt Weapons",
-  "tag.item.weaponsexpanded.pierce": "Piercing Weapons",
-  "tag.item.weaponsexpanded.two_handed": "Two-Handed Weapons",
-  "tag.item.weaponsexpanded.diamond_weapons": "Diamond Weapons",
-  "tag.item.weaponsexpanded.netherite_weapons": "Netherite Weapons",
-  "tag.item.weaponsexpanded.wooden_weapon_fuel": "Wooden Weapons",
-  "tag.item.weaponsexpanded.enchantable.leech": "Leech Enchantable",
-  "tag.item.weaponsexpanded.enchantable.cleaving": "Cleaving Enchantable",
-  "tag.item.weaponsexpanded.enchantable.capacity": "Capacity Enchantable",
-  "tag.enchantment.weaponsexpanded.exclusive_set.post_attack": "Post Attack Exclusive Set",
-  "tag.enchantment.weaponsexpanded.exclusive_set.bow_effects": "Bow Effects Exclusive Set",
-  "tag.block.weaponsexpanded.mineable.blunt": "Blunt Weapon Mineable Blocks"
+  "item.modifiers.bothhands": "If in Both Yer Hooks:"
 }
