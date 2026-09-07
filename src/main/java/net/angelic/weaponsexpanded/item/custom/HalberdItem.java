@@ -14,6 +14,7 @@ import net.minecraft.world.item.component.*;
 import java.util.Optional;
 import java.util.function.Consumer;
 
+@SuppressWarnings({"NullableProblems", "deprecation"})
 public class HalberdItem extends Item {
 
     private static final String WEAPONSEXPANDED$HALBERD_PIERCE_KEY = "weaponsexpanded:halberd_pierce";
@@ -65,7 +66,6 @@ public class HalberdItem extends Item {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public void appendHoverText(ItemStack stack, TooltipContext context, TooltipDisplay displayComponent, Consumer<Component> textConsumer, TooltipFlag type) {
         if(isPiercing(stack)) {
             textConsumer.accept(Component.translatable("tooltip.weaponsexpanded.halberd.piercing").withStyle(ChatFormatting.BLUE));

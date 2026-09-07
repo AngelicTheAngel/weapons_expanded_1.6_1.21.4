@@ -23,6 +23,7 @@ import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
 
+@SuppressWarnings("NullableProblems")
 public class LongbowItem extends BowItem {
     private static final int FULL_DRAW_TICKS = 32;   // vanilla bow: 20
     private static final float VELOCITY_MULT = 4f;   // vanilla uses 3.0f

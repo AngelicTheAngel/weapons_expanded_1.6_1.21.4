@@ -10,6 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
 
+@SuppressWarnings("NullableProblems")
 public class ExplosiveArrowEntity extends Arrow {
     private static final float EXPLOSION_POWER = 2f;
 

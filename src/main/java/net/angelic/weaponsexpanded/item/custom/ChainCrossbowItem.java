@@ -29,6 +29,7 @@ import java.util.List;
 
 import net.angelic.weaponsexpanded.item.ModItems;
 
+@SuppressWarnings({"NullableProblems", "deprecation"})
 public class ChainCrossbowItem extends CrossbowItem {
 
     private static final String WEAPONSEXPANDED$QUEUE_KEY = "weaponsexpanded:chain_crossbow_queue";
@@ -86,7 +87,6 @@ public class ChainCrossbowItem extends CrossbowItem {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public void appendHoverText(ItemStack stack, TooltipContext context, TooltipDisplay displayComponent,
                                 Consumer<Component> textConsumer, TooltipFlag type) {
         // queued shots (not counting the current chamber)

@@ -14,6 +14,8 @@ import java.nio.file.Path;
  * Simple JSON config stored at: config/weaponsexpanded.json
  * Safe to call early (also from mixin plugin).
  */
+
+@SuppressWarnings("unused")
 public final class WeaponsExpandedConfig {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static final String FILE_NAME = "weaponsexpanded.json";
@@ -21,10 +23,13 @@ public final class WeaponsExpandedConfig {
     private static volatile WeaponsExpandedConfig INSTANCE;
 
     public boolean enableCustomLootTables = true;                 // enabled by default
+    public boolean enableExtraDamageEnchants = true;              // enabled by default
+    public boolean enableExtraDamageEnchantsVillager = false;     // disabled by default
+    public boolean enableExtraDamageEnchantsLoot = false;         // disabled by default
     public boolean enableEntityMeleeEquipment = true;             // enabled by default
     public boolean enableTrialChamberMeleeEquipment = true;       // enabled by default
     public boolean enableEntityTypeChanges = true;                // enabled by default
-    public boolean enableExtraNetherEntities = false;          // disabled by default
+    public boolean enableExtraNetherEntities = false;             // disabled by default
     public boolean enableWeaponsmithTrades = true;                // enabled by default
     public boolean altTwoHandedSwordHandling = false;             // disabled by default
     public boolean disableExtraDurabilityDamageForAxes = true;    // enabled by default

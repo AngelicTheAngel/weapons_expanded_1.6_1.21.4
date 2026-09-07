@@ -18,6 +18,7 @@ import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.component.Weapon;
 
+@SuppressWarnings({"NullableProblems", "deprecation"})
 public class WarhammerItem extends Item {
 
     private static final String WEAPONSEXPANDED$SHARP_SIDE_KEY = "weaponsexpanded:warhammer_sharp_side";
@@ -66,7 +67,6 @@ public class WarhammerItem extends Item {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public void appendHoverText(ItemStack stack, TooltipContext context, TooltipDisplay displayComponent, Consumer<Component> textConsumer, TooltipFlag type) {
         if (isSharpSide(stack)) {
             textConsumer.accept(Component.translatable("tooltip.weaponsexpanded.warhammer.sharp_side").withStyle(ChatFormatting.BLUE));

@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricSoundsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.Identifier;
+import org.jspecify.annotations.NonNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -16,7 +17,7 @@ public class ModSoundsProvider extends FabricSoundsProvider {
     }
 
     @Override
-    protected void configure(HolderLookup.Provider registryLookup, SoundExporter exporter) {
+    protected void configure(HolderLookup.@NonNull Provider registryLookup, SoundExporter exporter) {
         exporter.add(ModSounds.CHAIN_CROSSBOW_CHAMBER, SoundTypeBuilder.of(ModSounds.CHAIN_CROSSBOW_CHAMBER)
                 .sound(SoundTypeBuilder.RegistrationBuilder.ofFile(Identifier.fromNamespaceAndPath(WeaponsExpanded.MOD_ID, "item/chain_crossbow_chamber"))));
 
@@ -25,7 +26,7 @@ public class ModSoundsProvider extends FabricSoundsProvider {
     }
 
     @Override
-    public String getName() {
+    public @NonNull String getName() {
         return "Weapons Expanded Sounds";
     }
 }

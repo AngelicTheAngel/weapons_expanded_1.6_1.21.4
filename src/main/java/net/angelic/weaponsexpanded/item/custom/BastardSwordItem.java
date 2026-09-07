@@ -17,6 +17,7 @@ import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.component.TooltipDisplay;
 
+@SuppressWarnings({"NullableProblems", "deprecation"})
 public class BastardSwordItem extends Item {
 
     private static final String WEAPONSEXPANDED$TWO_HANDED_KEY = "weaponsexpanded:bastard_sword_two_handed";
@@ -67,7 +68,6 @@ public class BastardSwordItem extends Item {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public void appendHoverText(ItemStack stack, TooltipContext context, TooltipDisplay displayComponent, Consumer<Component> textConsumer, TooltipFlag type) {
         if(isTwoHanded(stack)) {
             textConsumer.accept(Component.translatable("tooltip.weaponsexpanded.twohandedsword").withStyle(ChatFormatting.BLUE));

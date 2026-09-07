@@ -3,12 +3,14 @@ package net.angelic.weaponsexpanded.config;
 import me.shedaniel.clothconfig2.api.ConfigBuilder;
 import me.shedaniel.clothconfig2.api.ConfigCategory;
 import me.shedaniel.clothconfig2.api.ConfigEntryBuilder;
+import me.shedaniel.clothconfig2.api.Requirement;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 
 public final class WeaponsExpandedConfigScreen {
     private WeaponsExpandedConfigScreen() {}
 
+    @SuppressWarnings("UnstableApiUsage")
     public static Screen create(Screen parent) {
         WeaponsExpandedConfig cfg = WeaponsExpandedConfig.get();
 
@@ -23,32 +25,62 @@ public final class WeaponsExpandedConfigScreen {
 
         general.addEntry(eb.startBooleanToggle(Component.translatable("config.weaponsexpanded.option.enableCustomLootTables"), cfg.enableCustomLootTables)
                 .setDefaultValue(true)
-                .requireRestart()
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.enableCustomLootTables.description"))
                 .setSaveConsumer(v -> cfg.enableCustomLootTables = v)
                 .build());
 
         general.addEntry(eb.startBooleanToggle(Component.translatable("config.weaponsexpanded.option.dynamiteArrowsDestroyBlocks"), cfg.dynamiteArrowsDestroyBlocks)
                 .setDefaultValue(true)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.dynamiteArrowsDestroyBlocks.description"))
                 .setSaveConsumer(v -> cfg.dynamiteArrowsDestroyBlocks = v)
+                .build());
+
+        var extraDamageEnchantsEntry = eb.startBooleanToggle(Component.translatable("config.weaponsexpanded.option.enableExtraDamageEnchants"), cfg.enableExtraDamageEnchants)
+                .setDefaultValue(true)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.enableExtraDamageEnchants.description"))
+                .requireRestart()
+                .setSaveConsumer(v -> cfg.enableExtraDamageEnchants = v)
+                .build();
+
+        general.addEntry(extraDamageEnchantsEntry);
+
+        general.addEntry(eb.startBooleanToggle(Component.translatable("config.weaponsexpanded.option.enableExtraDamageEnchantsVillager"), cfg.enableExtraDamageEnchantsVillager)
+                .setDefaultValue(false)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.enableExtraDamageEnchantsVillager.description"))
+                .setRequirement(Requirement.isFalse(extraDamageEnchantsEntry))
+                .requireRestart()
+                .setSaveConsumer(v -> cfg.enableExtraDamageEnchantsVillager = v)
+                .build());
+
+        general.addEntry(eb.startBooleanToggle(Component.translatable("config.weaponsexpanded.option.enableExtraDamageEnchantsLoot"), cfg.enableExtraDamageEnchantsLoot)
+                .setDefaultValue(false)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.enableExtraDamageEnchantsLoot.description"))
+                .setRequirement(Requirement.isFalse(extraDamageEnchantsEntry))
+                .requireRestart()
+                .setSaveConsumer(v -> cfg.enableExtraDamageEnchantsLoot = v)
                 .build());
 
         general.addEntry(eb.startIntSlider(Component.translatable("config.weaponsexpanded.option.chainCrossbowMagazineSize"), cfg.chainCrossbowMagazineSize, 1, 10)
                 .setDefaultValue(3)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.chainCrossbowMagazineSize.description"))
                 .setSaveConsumer(v -> cfg.chainCrossbowMagazineSize = v)
                 .build());
 
         general.addEntry(eb.startIntSlider(Component.translatable("config.weaponsexpanded.option.chainCrossbowCooldown"), cfg.chainCrossbowCooldown, 0, 20)
                 .setDefaultValue(8)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.chainCrossbowCooldown.description"))
                 .setSaveConsumer(v -> cfg.chainCrossbowCooldown = v)
                 .build());
 
         general.addEntry(eb.startIntSlider(Component.translatable("config.weaponsexpanded.option.chainCrossbowLoadTime"), cfg.chainCrossbowLoadTime, 1, 50)
                 .setDefaultValue(38)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.chainCrossbowLoadTime.description"))
                 .setSaveConsumer(v -> cfg.chainCrossbowLoadTime = v)
                 .build());
 
         general.addEntry(eb.startIntSlider(Component.translatable("config.weaponsexpanded.option.extraSizePerCapacityLevel"), cfg.chainCrossbowExtraSizePerCapacityLevel, 1, 3)
                 .setDefaultValue(1)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.extraSizePerCapacityLevel.description"))
                 .setSaveConsumer(v -> cfg.chainCrossbowExtraSizePerCapacityLevel = v)
                 .build());
 
@@ -85,23 +117,27 @@ public final class WeaponsExpandedConfigScreen {
 
         general.addEntry(eb.startBooleanToggle(Component.translatable("config.weaponsexpanded.option.enableWeaponsmithTrades"), cfg.enableWeaponsmithTrades)
                 .setDefaultValue(true)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.enableWeaponsmithTrades.description"))
                 .requireRestart()
                 .setSaveConsumer(v -> cfg.enableWeaponsmithTrades = v)
                 .build());
 
         general.addEntry(eb.startBooleanToggle(Component.translatable("config.weaponsexpanded.option.frostbitePotionRecipe"), cfg.frostbitePotionRecipe)
                 .setDefaultValue(true)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.frostbitePotionRecipe.description"))
                 .requireRestart()
                 .setSaveConsumer(v -> cfg.frostbitePotionRecipe = v)
                 .build());
 
         general.addEntry(eb.startBooleanToggle(Component.translatable("config.weaponsexpanded.option.altTwoHandedSwordHandling"), cfg.altTwoHandedSwordHandling)
                 .setDefaultValue(false)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.altTwoHandedSwordHandling.description"))
                 .setSaveConsumer(v -> cfg.altTwoHandedSwordHandling = v)
                 .build());
 
         general.addEntry(eb.startBooleanToggle(Component.translatable("config.weaponsexpanded.option.disableExtraDurabilityDamageForAxes"), cfg.disableExtraDurabilityDamageForAxes)
                 .setDefaultValue(true)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.disableExtraDurabilityDamageForAxes.description"))
                 .setSaveConsumer(v -> cfg.disableExtraDurabilityDamageForAxes = v)
                 .build());
 

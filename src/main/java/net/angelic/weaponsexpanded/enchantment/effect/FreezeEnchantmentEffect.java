@@ -7,6 +7,7 @@ import net.minecraft.world.item.enchantment.EnchantedItemInUse;
 import net.minecraft.world.item.enchantment.effects.EnchantmentEntityEffect;
 import net.minecraft.world.phys.Vec3;
 
+@SuppressWarnings("NullableProblems")
 public record FreezeEnchantmentEffect() implements EnchantmentEntityEffect {
     public static final MapCodec<FreezeEnchantmentEffect> CODEC = MapCodec.unit(FreezeEnchantmentEffect::new);
 

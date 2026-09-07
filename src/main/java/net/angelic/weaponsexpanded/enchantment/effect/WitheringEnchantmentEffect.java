@@ -10,6 +10,7 @@ import net.minecraft.world.item.enchantment.EnchantedItemInUse;
 import net.minecraft.world.item.enchantment.effects.EnchantmentEntityEffect;
 import net.minecraft.world.phys.Vec3;
 
+@SuppressWarnings("NullableProblems")
 public record WitheringEnchantmentEffect() implements EnchantmentEntityEffect {
     public static final MapCodec<WitheringEnchantmentEffect> CODEC = MapCodec.unit(WitheringEnchantmentEffect::new);
 

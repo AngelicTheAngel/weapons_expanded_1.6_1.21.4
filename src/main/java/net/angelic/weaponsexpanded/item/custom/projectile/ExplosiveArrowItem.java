@@ -8,6 +8,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
+@SuppressWarnings("NullableProblems")
 public class ExplosiveArrowItem extends ArrowItem {
     public ExplosiveArrowItem(Item.Properties settings) {
         super(settings);

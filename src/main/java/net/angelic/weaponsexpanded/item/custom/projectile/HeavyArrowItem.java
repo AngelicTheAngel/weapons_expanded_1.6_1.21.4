@@ -11,6 +11,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
+@SuppressWarnings("NullableProblems")
 public class HeavyArrowItem extends ArrowItem {
     private static final String WEAPONSEXPANDED$CREATIVE_FIRED_TAG = "weaponsexpanded.creative_fired_heavy_arrow";
 

@@ -36,6 +36,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+@SuppressWarnings("unused")
 public class WeaponsExpanded implements ModInitializer {
     public static final String MOD_ID = "weaponsexpanded";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
@@ -75,6 +76,30 @@ public class WeaponsExpanded implements ModInitializer {
                             Identifier.fromNamespaceAndPath(MOD_ID, "nether_entity_type_changes"),
                             container,
                             PackActivationType.ALWAYS_ENABLED));
+        }
+
+        if (WeaponsExpandedConfig.get().enableExtraDamageEnchants) {
+            FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(
+                    container -> ResourceLoader.registerBuiltinPack(
+                            Identifier.fromNamespaceAndPath(MOD_ID, "extra_damage_enchantments"),
+                            container,
+                            PackActivationType.ALWAYS_ENABLED));
+        } else {
+            if (WeaponsExpandedConfig.get().enableExtraDamageEnchantsVillager) {
+                FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(
+                        container -> ResourceLoader.registerBuiltinPack(
+                                Identifier.fromNamespaceAndPath(MOD_ID, "extra_damage_enchantments_villager"),
+                                container,
+                                PackActivationType.ALWAYS_ENABLED));
+            }
+
+            if (WeaponsExpandedConfig.get().enableExtraDamageEnchantsLoot) {
+                FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(
+                        container -> ResourceLoader.registerBuiltinPack(
+                                Identifier.fromNamespaceAndPath(MOD_ID, "extra_damage_enchantments_loot"),
+                                container,
+                                PackActivationType.ALWAYS_ENABLED));
+            }
         }
 
         ServerPlayNetworking.registerGlobalReceiver(FireChainCrossbowPayload.ID, (payload, context) ->

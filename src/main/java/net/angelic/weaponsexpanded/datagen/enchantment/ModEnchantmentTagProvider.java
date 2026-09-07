@@ -9,6 +9,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.tags.EnchantmentTags;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
+import org.jspecify.annotations.NonNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -18,7 +19,7 @@ public class ModEnchantmentTagProvider extends FabricTagsProvider<Enchantment> {
     }
 
     @Override
-    protected void addTags(HolderLookup.Provider registries) {
+    protected void addTags(HolderLookup.@NonNull Provider registries) {
         builder(EnchantmentTags.TRADEABLE)
                 .add(ModEnchantments.LEECH);
 
@@ -31,9 +32,7 @@ public class ModEnchantmentTagProvider extends FabricTagsProvider<Enchantment> {
                 .add(ModEnchantments.FROSTBITE)
                 .add(ModEnchantments.FREEZE)
                 .add(ModEnchantments.CLEAVING)
-                .add(ModEnchantments.CAPACITY)
-                .add(ModEnchantments.NETHERS_SCOURGE)
-                .add(ModEnchantments.ENDS_BANE);
+                .add(ModEnchantments.CAPACITY);
 
         builder(EnchantmentTags.DAMAGE_EXCLUSIVE)
                 .add(ModEnchantments.NETHERS_SCOURGE)

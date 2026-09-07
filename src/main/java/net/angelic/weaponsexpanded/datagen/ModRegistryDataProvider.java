@@ -12,6 +12,7 @@ import net.minecraft.world.item.trading.VillagerTrade;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
+@SuppressWarnings("NullableProblems")
 public class ModRegistryDataProvider extends FabricDynamicRegistryProvider {
     public ModRegistryDataProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
         super(output, registriesFuture);
