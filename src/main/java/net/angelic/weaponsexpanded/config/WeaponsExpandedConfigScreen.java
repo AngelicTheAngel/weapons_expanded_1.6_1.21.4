@@ -84,6 +84,12 @@ public final class WeaponsExpandedConfigScreen {
                 .setSaveConsumer(v -> cfg.chainCrossbowExtraSizePerCapacityLevel = v)
                 .build());
 
+        general.addEntry(eb.startIntSlider(Component.translatable("config.weaponsexpanded.option.dynamiteArrowDurabilityDamage"), cfg.dynamiteArrowDurabilityDamage, 1, 5)
+                .setDefaultValue(4)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.dynamiteArrowDurabilityDamage.description"))
+                .setSaveConsumer(v -> cfg.dynamiteArrowDurabilityDamage = v)
+                .build());
+
         general.addEntry(eb.startBooleanToggle(Component.translatable("config.weaponsexpanded.option.enableEntityMeleeEquipment"), cfg.enableEntityMeleeEquipment)
                 .setDefaultValue(true)
                 .setTooltip(Component.translatable("config.weaponsexpanded.option.enableEntityMeleeEquipment.description"))

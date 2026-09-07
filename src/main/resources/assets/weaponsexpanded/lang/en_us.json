@@ -211,6 +211,8 @@
   "config.weaponsexpanded.option.enableExtraDamageEnchantsVillager.description": "Allows Nether's Scourge and End's Bane to appear in Villager trades",
   "config.weaponsexpanded.option.enableExtraDamageEnchantsLoot": "Enable Extra Damage Enchantments For Loot",
   "config.weaponsexpanded.option.enableExtraDamageEnchantsLoot.description": "Allows Nether's Scourge and End's Bane to appear on random loot",
+  "config.weaponsexpanded.option.dynamiteArrowDurabilityDamage": "Dynamite Arrow Durability Damage",
+  "config.weaponsexpanded.option.dynamiteArrowDurabilityDamage.description": "Changes how much durability Dynamite Arrows use when fired",
 
   "key.category.weaponsexpanded.general": "Weapons Expanded",
   "key.weaponsexpanded.toggle_bastard_sword_mode": "Toggle Weapon Mode"
