@@ -79,7 +79,7 @@ public class RitualDaggerItem extends Item {
         }
 
         if(player.hasEffect(MobEffects.RESISTANCE)) {
-            if(player.getEffect(MobEffects.RESISTANCE).getAmplifier() >= (WeaponsExpandedConfig.get().ritualDaggerMaxLevel - 1)) {
+            if(player.getEffect(MobEffects.RESISTANCE).getAmplifier() >= (1)) {
                 if (player.getEffect(MobEffects.RESISTANCE).getDuration() < 1200) {
                     player.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 1200, player.getEffect(MobEffects.RESISTANCE).getAmplifier()));
                 }
