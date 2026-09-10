@@ -141,6 +141,12 @@ public final class WeaponsExpandedConfigScreen {
                 .setSaveConsumer(v -> cfg.altTwoHandedSwordHandling = v)
                 .build());
 
+        general.addEntry(eb.startBooleanToggle(Component.translatable("config.weaponsexpanded.option.longswordSwapSetsShieldCooldown"), cfg.longswordSwapSetsShieldCooldown)
+                .setDefaultValue(true)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.longswordSwapSetsShieldCooldown.description"))
+                .setSaveConsumer(v -> cfg.longswordSwapSetsShieldCooldown = v)
+                .build());
+
         general.addEntry(eb.startBooleanToggle(Component.translatable("config.weaponsexpanded.option.disableExtraDurabilityDamageForAxes"), cfg.disableExtraDurabilityDamageForAxes)
                 .setDefaultValue(true)
                 .setTooltip(Component.translatable("config.weaponsexpanded.option.disableExtraDurabilityDamageForAxes.description"))

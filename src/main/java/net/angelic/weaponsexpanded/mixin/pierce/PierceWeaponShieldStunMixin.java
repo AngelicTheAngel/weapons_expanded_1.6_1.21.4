@@ -1,5 +1,6 @@
 package net.angelic.weaponsexpanded.mixin.pierce;
 
+import net.angelic.weaponsexpanded.item.custom.HalberdItem;
 import net.angelic.weaponsexpanded.util.tags.ModItemTags;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
@@ -23,7 +24,7 @@ public abstract class PierceWeaponShieldStunMixin {
         ItemStack weapon = attacker.getWeaponItem();
         Random random = new Random();
 
-        if (weapon.is(ModItemTags.PIERCE) && random.nextInt(3) != 0) {
+        if (weapon.is(ModItemTags.PIERCE) && random.nextInt(3) != 0 && !(weapon.getItem() instanceof HalberdItem)) {
             cir.setReturnValue(0.0F);
         }
     }

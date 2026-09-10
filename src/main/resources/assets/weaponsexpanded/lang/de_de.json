@@ -171,6 +171,7 @@
   "config.weaponsexpanded.option.enableExtraDamageEnchantsVillager": "Zusätzliche Schadensverzauberungen für Dorfbewohner aktivieren",
   "config.weaponsexpanded.option.enableExtraDamageEnchantsLoot": "Zusätzliche Schadensverzauberungen für Beute aktivieren",
   "config.weaponsexpanded.option.dynamiteArrowDurabilityDamage": "Dynamitpfeil Haltbarkeit Schaden",
+  "config.weaponsexpanded.option.longswordSwapSetsShieldCooldown": "Der Wechsel zum Langschwert setzt die Abklingzeit des Schildes zurück",
 
   "config.weaponsexpanded.option.enableCustomLootTables.description": "Ermöglicht das Erscheinen benutzerdefinierter Waffen in Gebäuden",
   "config.weaponsexpanded.option.enableEntityMeleeEquipment.description": "Ermöglicht es Zombies und Piglins, mit benutzerdefinierten Waffen zu erscheinen",
@@ -190,6 +191,7 @@
   "config.weaponsexpanded.option.enableExtraDamageEnchantsVillager.description": "Ermöglicht es, dass „Nethers Geißel“ und „Ends Fluch“ im Handel mit Dorfbewohnern erscheinen",
   "config.weaponsexpanded.option.enableExtraDamageEnchantsLoot.description": "Ermöglicht es, dass „Nethers Geißel“ und „Ends Fluch“ als zufällige Beute erscheinen",
   "config.weaponsexpanded.option.dynamiteArrowDurabilityDamage.description": "Ändert den Verschleiß der Dynamitpfeile beim Abschuss",
+  "config.weaponsexpanded.option.longswordSwapSetsShieldCooldown.description": "Legt fest, ob beim Wechsel aus dem Langschwert-Modus eine Abklingzeit von 20 Ticks für Schilde gilt",
 
   "key.category.weaponsexpanded.general": "Erweiterte Waffen",
   "key.weaponsexpanded.toggle_bastard_sword_mode": "Waffenmodus umschalten"

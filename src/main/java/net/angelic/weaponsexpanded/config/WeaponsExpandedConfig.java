@@ -34,6 +34,7 @@ public final class WeaponsExpandedConfig {
     public boolean altTwoHandedSwordHandling = false;             // disabled by default
     public boolean disableExtraDurabilityDamageForAxes = true;    // enabled by default
     public boolean frostbitePotionRecipe = true;                  // enabled by default
+    public boolean longswordSwapSetsShieldCooldown = true;        // enabled by default
     public boolean dynamiteArrowsDestroyBlocks = true;            // enabled by default
     public int dynamiteArrowDurabilityDamage = 4;                 // 4 by default
     public int chainCrossbowMagazineSize = 3;                     // 3 by default

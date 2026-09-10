@@ -213,6 +213,8 @@
   "config.weaponsexpanded.option.enableExtraDamageEnchantsLoot.description": "Allows Nether's Scourge and End's Bane to appear on random loot",
   "config.weaponsexpanded.option.dynamiteArrowDurabilityDamage": "Dynamite Arrow Durability Damage",
   "config.weaponsexpanded.option.dynamiteArrowDurabilityDamage.description": "Changes how much durability Dynamite Arrows use when fired",
+  "config.weaponsexpanded.option.longswordSwapSetsShieldCooldown": "Longsword Swap Sets Shield Cooldown",
+  "config.weaponsexpanded.option.longswordSwapSetsShieldCooldown.description": "Decides whether swapping the Longsword mode imposes a 20 tick cooldown on shields",
 
   "key.category.weaponsexpanded.general": "Weapons Expanded",
   "key.weaponsexpanded.toggle_bastard_sword_mode": "Toggle Weapon Mode"
