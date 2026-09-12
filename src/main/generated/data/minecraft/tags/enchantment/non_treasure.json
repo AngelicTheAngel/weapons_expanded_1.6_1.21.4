@@ -5,6 +5,7 @@
     "weaponsexpanded:frostbite",
     "weaponsexpanded:freeze",
     "weaponsexpanded:cleaving",
-    "weaponsexpanded:capacity"
+    "weaponsexpanded:capacity",
+    "weaponsexpanded:auto_load"
   ]
 }

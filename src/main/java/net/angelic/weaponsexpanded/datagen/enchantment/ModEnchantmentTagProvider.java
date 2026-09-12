@@ -32,7 +32,8 @@ public class ModEnchantmentTagProvider extends FabricTagsProvider<Enchantment> {
                 .add(ModEnchantments.FROSTBITE)
                 .add(ModEnchantments.FREEZE)
                 .add(ModEnchantments.CLEAVING)
-                .add(ModEnchantments.CAPACITY);
+                .add(ModEnchantments.CAPACITY)
+                .add(ModEnchantments.AUTO_LOAD);
 
         builder(EnchantmentTags.DAMAGE_EXCLUSIVE)
                 .add(ModEnchantments.NETHERS_SCOURGE)
@@ -47,5 +48,9 @@ public class ModEnchantmentTagProvider extends FabricTagsProvider<Enchantment> {
         builder(ModEnchantmentTags.BOW_EFFECTS_EXCLUSIVE_SET)
                 .add(Enchantments.FLAME)
                 .add(ModEnchantments.FREEZE);
+
+        builder(ModEnchantmentTags.CROSSBOW_LOAD_EXCLUSIVE_SET)
+                .add(Enchantments.QUICK_CHARGE)
+                .add(ModEnchantments.AUTO_LOAD);
     }
 }

@@ -115,6 +115,7 @@
   "enchantment.weaponsexpanded.leech": "Blutsauger",
   "enchantment.weaponsexpanded.cleaving": "Spalten",
   "enchantment.weaponsexpanded.capacity": "Kapazität",
+  "enchantment.weaponsexpanded.auto_load": "Automatisches Laden",
   "enchantment.weaponsexpanded.nethers_scourge": "Nethers Geißel",
   "enchantment.weaponsexpanded.ends_bane": "Ends Fluch",
 
@@ -125,6 +126,7 @@
   "enchantment.weaponsexpanded.leech.desc": "Gewährt Heilung beim Abwehren von Schaden, im Gegenzug für zusätzliche Haltbarkeit",
   "enchantment.weaponsexpanded.cleaving.desc": "Erhöht die Dauer der Betäubung von Schilden, wenn diese festgenagelt sind",
   "enchantment.weaponsexpanded.capacity.desc": "Erhöht die Magazinkapazität von Kettenarmbrüsten",
+  "enchantment.weaponsexpanded.auto_load.desc": "Lädt Armbrüste automatisch, solange sie sich in deinem Inventar befinden",
   "enchantment.weaponsexpanded.nethers_scourge.desc": "Erhöht den Schaden gegen Nether-Mobs wie Piglins und Blazes",
   "enchantment.weaponsexpanded.ends_bane.desc": "Erhöht den Schaden gegen End-Mobs wie Endermen und Shulker",
 
@@ -171,7 +173,9 @@
   "config.weaponsexpanded.option.enableExtraDamageEnchantsVillager": "Zusätzliche Schadensverzauberungen für Dorfbewohner aktivieren",
   "config.weaponsexpanded.option.enableExtraDamageEnchantsLoot": "Zusätzliche Schadensverzauberungen für Beute aktivieren",
   "config.weaponsexpanded.option.dynamiteArrowDurabilityDamage": "Dynamitpfeil Haltbarkeit Schaden",
-  "config.weaponsexpanded.option.longswordSwapSetsShieldCooldown": "Der Wechsel zum Langschwert setzt die Abklingzeit des Schildes zurück",
+  "config.weaponsexpanded.option.weaponModeSwapSetsShieldCooldown": "Der Wechsel des Waffenmodus legt die Abklingzeit des Schildes fest",
+  "config.weaponsexpanded.option.autoLoadFiringDelay": "Verzögerung beim automatischen Laden und Abfeuern",
+  "config.weaponsexpanded.option.autoLoadChargeMultiplier": "Multiplikator für die automatische Ladung",
 
   "config.weaponsexpanded.option.enableCustomLootTables.description": "Ermöglicht das Erscheinen benutzerdefinierter Waffen in Gebäuden",
   "config.weaponsexpanded.option.enableEntityMeleeEquipment.description": "Ermöglicht es Zombies und Piglins, mit benutzerdefinierten Waffen zu erscheinen",
@@ -191,7 +195,9 @@
   "config.weaponsexpanded.option.enableExtraDamageEnchantsVillager.description": "Ermöglicht es, dass „Nethers Geißel“ und „Ends Fluch“ im Handel mit Dorfbewohnern erscheinen",
   "config.weaponsexpanded.option.enableExtraDamageEnchantsLoot.description": "Ermöglicht es, dass „Nethers Geißel“ und „Ends Fluch“ als zufällige Beute erscheinen",
   "config.weaponsexpanded.option.dynamiteArrowDurabilityDamage.description": "Ändert den Verschleiß der Dynamitpfeile beim Abschuss",
-  "config.weaponsexpanded.option.longswordSwapSetsShieldCooldown.description": "Legt fest, ob beim Wechsel aus dem Langschwert-Modus eine Abklingzeit von 20 Ticks für Schilde gilt",
+  "config.weaponsexpanded.option.weaponModeSwapSetsShieldCooldown.description": "Determina si, al salir del modo de espada larga, se aplica un tiempo de recarga de 20 ticks a los escudos",
+  "config.weaponsexpanded.option.autoLoadFiringDelay.description": "Die Verzögerung zwischen dem Abfeuern einer Armbrust und dem Beginn des Ladevorgangs durch Auto Load",
+  "config.weaponsexpanded.option.autoLoadChargeMultiplier.description": "Wie viel länger dauert das Laden mit Auto Load im Vergleich zum Laden mit einem Player?",
 
   "key.category.weaponsexpanded.general": "Erweiterte Waffen",
   "key.weaponsexpanded.toggle_bastard_sword_mode": "Waffenmodus umschalten"

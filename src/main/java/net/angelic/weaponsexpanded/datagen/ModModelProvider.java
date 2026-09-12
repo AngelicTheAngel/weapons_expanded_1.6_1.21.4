@@ -173,13 +173,41 @@ public class ModModelProvider extends FabricModelProvider {
                         chain_crossbow_explosive_arrow
                 ));
 
-        ItemModel.Unbaked chain_crossbow_final = new RangeSelectItemModel.Unbaked(
-                Optional.empty(),
-                new CustomModelDataProperty(0),
-                1.0F,
-                List.of(
-                        ItemModelUtils.override(chain_crossbow_explosive, 1.0F)),
-                Optional.of(chain_crossbow_vanilla));
+        ItemModel.Unbaked chain_crossbow_with_explosive =
+                new RangeSelectItemModel.Unbaked(
+                        Optional.empty(),
+                        new CustomModelDataProperty(0),
+                        1.0F,
+                        List.of(
+                                ItemModelUtils.override(
+                                        chain_crossbow_explosive,
+                                        1.0F
+                                )
+                        ),
+                        Optional.of(chain_crossbow_vanilla)
+                );
+
+        ItemModel.Unbaked chain_crossbow_final =
+                new RangeSelectItemModel.Unbaked(
+                        Optional.empty(),
+                        new CustomModelDataProperty(1),
+                        1.0F,
+                        List.of(
+                                ItemModelUtils.override(
+                                        chain_crossbow_pulling_0,
+                                        1.0F
+                                ),
+                                ItemModelUtils.override(
+                                        chain_crossbow_pulling_1,
+                                        2.0F
+                                ),
+                                ItemModelUtils.override(
+                                        chain_crossbow_pulling_2,
+                                        3.0F
+                                )
+                        ),
+                        Optional.of(chain_crossbow_with_explosive)
+                );
 
         itemModelGenerator.itemModelOutput.accept(ModItems.CHAIN_CROSSBOW, chain_crossbow_final);
 

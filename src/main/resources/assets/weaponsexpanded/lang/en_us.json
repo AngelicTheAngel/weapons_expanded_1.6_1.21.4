@@ -123,6 +123,8 @@
   "enchantment.weaponsexpanded.cleaving.desc": "Increases how long shields are stunned when stuck down",
   "enchantment.weaponsexpanded.capacity": "Capacity",
   "enchantment.weaponsexpanded.capacity.desc": "Increases the magazine size of chain crossbows",
+  "enchantment.weaponsexpanded.auto_load": "Auto Load",
+  "enchantment.weaponsexpanded.auto_load.desc": "Automatically loads crossbows while in your inventory",
   "enchantment.weaponsexpanded.nethers_scourge": "Nether's Scourge",
   "enchantment.weaponsexpanded.nethers_scourge.desc": "Increases damage against Nether mobs such as Piglins and Blazes",
   "enchantment.weaponsexpanded.ends_bane": "End's Bane",
@@ -213,8 +215,12 @@
   "config.weaponsexpanded.option.enableExtraDamageEnchantsLoot.description": "Allows Nether's Scourge and End's Bane to appear on random loot",
   "config.weaponsexpanded.option.dynamiteArrowDurabilityDamage": "Dynamite Arrow Durability Damage",
   "config.weaponsexpanded.option.dynamiteArrowDurabilityDamage.description": "Changes how much durability Dynamite Arrows use when fired",
-  "config.weaponsexpanded.option.longswordSwapSetsShieldCooldown": "Longsword Swap Sets Shield Cooldown",
-  "config.weaponsexpanded.option.longswordSwapSetsShieldCooldown.description": "Decides whether swapping the Longsword mode imposes a 20 tick cooldown on shields",
+  "config.weaponsexpanded.option.weaponModeSwapSetsShieldCooldown": "Weapon Mode Swap Sets Shield Cooldown",
+  "config.weaponsexpanded.option.weaponModeSwapSetsShieldCooldown.description": "Decides whether swapping the weapon mode imposes a 20 tick cooldown on shields",
+  "config.weaponsexpanded.option.autoLoadFiringDelay": "Auto Load Firing Delay",
+  "config.weaponsexpanded.option.autoLoadFiringDelay.description": "The delay between firing a crossbow and Auto Load starting to load (in ticks)",
+  "config.weaponsexpanded.option.autoLoadChargeMultiplier": "Auto Load Charge Multiplier",
+  "config.weaponsexpanded.option.autoLoadChargeMultiplier.description": "How many times longer Auto Load takes to load than a player",
 
   "key.category.weaponsexpanded.general": "Weapons Expanded",
   "key.weaponsexpanded.toggle_bastard_sword_mode": "Toggle Weapon Mode"
