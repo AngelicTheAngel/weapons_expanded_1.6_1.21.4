@@ -90,6 +90,18 @@ public final class WeaponsExpandedConfigScreen {
                 .setSaveConsumer(v -> cfg.dynamiteArrowDurabilityDamage = v)
                 .build());
 
+        general.addEntry(eb.startIntSlider(Component.translatable("config.weaponsexpanded.option.autoLoadFiringDelay"), cfg.autoLoadFiringDelay, 0, 50)
+                .setDefaultValue(20)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.autoLoadFiringDelay.description"))
+                .setSaveConsumer(v -> cfg.autoLoadFiringDelay = v)
+                .build());
+
+        general.addEntry(eb.startFloatField(Component.translatable("config.weaponsexpanded.option.autoLoadChargeMultiplier"), cfg.autoLoadChargeMultiplier)
+                .setDefaultValue(2)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.autoLoadChargeMultiplier.description"))
+                .setSaveConsumer(v -> cfg.autoLoadChargeMultiplier = v)
+                .build());
+
         general.addEntry(eb.startBooleanToggle(Component.translatable("config.weaponsexpanded.option.enableEntityMeleeEquipment"), cfg.enableEntityMeleeEquipment)
                 .setDefaultValue(true)
                 .setTooltip(Component.translatable("config.weaponsexpanded.option.enableEntityMeleeEquipment.description"))
@@ -141,10 +153,10 @@ public final class WeaponsExpandedConfigScreen {
                 .setSaveConsumer(v -> cfg.altTwoHandedSwordHandling = v)
                 .build());
 
-        general.addEntry(eb.startBooleanToggle(Component.translatable("config.weaponsexpanded.option.longswordSwapSetsShieldCooldown"), cfg.longswordSwapSetsShieldCooldown)
+        general.addEntry(eb.startBooleanToggle(Component.translatable("config.weaponsexpanded.option.weaponModeSwapSetsShieldCooldown"), cfg.weaponModeSwapSetsShieldCooldown)
                 .setDefaultValue(true)
-                .setTooltip(Component.translatable("config.weaponsexpanded.option.longswordSwapSetsShieldCooldown.description"))
-                .setSaveConsumer(v -> cfg.longswordSwapSetsShieldCooldown = v)
+                .setTooltip(Component.translatable("config.weaponsexpanded.option.weaponModeSwapSetsShieldCooldown.description"))
+                .setSaveConsumer(v -> cfg.weaponModeSwapSetsShieldCooldown = v)
                 .build());
 
         general.addEntry(eb.startBooleanToggle(Component.translatable("config.weaponsexpanded.option.disableExtraDurabilityDamageForAxes"), cfg.disableExtraDurabilityDamageForAxes)

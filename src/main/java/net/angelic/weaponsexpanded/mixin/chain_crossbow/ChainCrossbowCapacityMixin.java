@@ -18,10 +18,11 @@ public abstract class ChainCrossbowCapacityMixin {
     private void weaponsexpanded$updateCapacity(CallbackInfo ci) {
         LivingEntity entity = (LivingEntity) (Object) this;
         if (!(entity instanceof Player player)) return;
+        if (player.level().isClientSide()) return;
 
         for (ItemStack stack : player.getInventory()) {
-            if (stack.getItem() instanceof ChainCrossbowItem crossbow) {
-                crossbow.setMaxShots(stack, ModEnchantmentHelper.getLevel(player.level(), stack, ModEnchantments.CAPACITY));
+            if (stack.getItem() instanceof ChainCrossbowItem chainCrossbow) {
+                chainCrossbow.setMaxShots(stack, ModEnchantmentHelper.getLevel(player.level(), stack, ModEnchantments.CAPACITY));
             }
         }
     }

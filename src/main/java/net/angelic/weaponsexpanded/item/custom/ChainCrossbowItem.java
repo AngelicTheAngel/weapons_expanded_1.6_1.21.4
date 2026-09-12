@@ -36,8 +36,7 @@ public class ChainCrossbowItem extends CrossbowItem {
     private static final String WEAPONSEXPANDED$SAVED_CHAMBER_KEY = "weaponsexpanded:chain_crossbow_saved_chamber";
     private static final String WEAPONSEXPANDED$MAX_TOTAL_SHOTS_KEY = "weaponsexpanded:chain_crossbow_max_total_shots";
 
-    // Use float slot 0 in CustomModelDataComponent to drive item model selection
-    private static final float WEAPONSEXPANDED$CMD_EXPLOSIVE_LOADED = 1.0F;
+//    private static final float WEAPONSEXPANDED$CMD_EXPLOSIVE_LOADED = 1.0F;
 
     public void setMaxShots(ItemStack stack, int level) {
         int maxTotalShots = Math.max(1, WeaponsExpandedConfig.get().chainCrossbowMagazineSize + (level * WeaponsExpandedConfig.get().chainCrossbowExtraSizePerCapacityLevel));
@@ -57,21 +56,113 @@ public class ChainCrossbowItem extends CrossbowItem {
                 .orElse(WeaponsExpandedConfig.get().chainCrossbowMagazineSize));
     }
 
-    private static void weaponsexpanded$updateLoadedVisual(ItemStack stack) {
-        ChargedProjectiles charged =
-                stack.getOrDefault(DataComponents.CHARGED_PROJECTILES, ChargedProjectiles.EMPTY);
+    public static void weaponsexpanded$setModelFloat(ItemStack stack, int index, float value) {
+        CustomModelData current = stack.get(DataComponents.CUSTOM_MODEL_DATA);
 
-        boolean hasExplosive = charged.items().stream()
-                .anyMatch(s -> s.item().value() == ModItems.EXPLOSIVE_ARROW);
-
-        if (hasExplosive) {
-            stack.set(
-                    DataComponents.CUSTOM_MODEL_DATA,
-                    new CustomModelData(List.of(WEAPONSEXPANDED$CMD_EXPLOSIVE_LOADED), List.of(), List.of(), List.of())
-            );
-        } else {
-            stack.remove(DataComponents.CUSTOM_MODEL_DATA);
+        if (current == null && value == 0.0F) {
+            return;
         }
+
+        List<Float> floats = current != null
+                ? new ArrayList<>(current.floats())
+                : new ArrayList<>();
+
+        while (floats.size() <= index) {
+            floats.add(0.0F);
+        }
+
+        if (Float.compare(floats.get(index), value) == 0) return;
+
+        floats.set(index, value);
+
+        stack.set(DataComponents.CUSTOM_MODEL_DATA,
+                new CustomModelData(
+                        List.copyOf(floats),
+                        current != null ? current.flags() : List.of(),
+                        current != null ? current.strings() : List.of(),
+                        current != null ? current.colors() : List.of()
+                )
+        );
+    }
+
+    public boolean weaponsexpanded$isMagazineFull(ItemStack crossbow) {
+        CompoundTag root = weaponsexpanded$getOrCreateCustomNbt(crossbow);
+        int maxTotalShots = weaponsexpanded$getMaxTotalShots(crossbow);
+
+        boolean hasCurrentOrSaved = CrossbowItem.isCharged(crossbow) || root.contains(WEAPONSEXPANDED$SAVED_CHAMBER_KEY);
+
+        int queued = root.getListOrEmpty(WEAPONSEXPANDED$QUEUE_KEY).size();
+
+        int total = (hasCurrentOrSaved ? 1 : 0) + queued;
+        return total >= maxTotalShots;
+    }
+
+    public boolean weaponsexpanded$prepareAutoLoad(Level world, ItemStack crossbow) {
+        if (world.isClientSide()) return false;
+
+        CompoundTag root = weaponsexpanded$getOrCreateCustomNbt(crossbow);
+        int maxTotalShots = weaponsexpanded$getMaxTotalShots(crossbow);
+
+        weaponsexpanded$trimQueueToMax(root, maxTotalShots);
+
+        if (root.contains(WEAPONSEXPANDED$SAVED_CHAMBER_KEY)) return false;
+
+        boolean hasCurrent = CrossbowItem.isCharged(crossbow);
+        int queued = root.getListOrEmpty(WEAPONSEXPANDED$QUEUE_KEY).size();
+
+        int total = (hasCurrent ? 1 : 0) + queued;
+
+        if (total >= maxTotalShots) {
+            weaponsexpanded$setCustomNbt(crossbow, root);
+            return false;
+        }
+
+        if (hasCurrent) {
+            root.put(WEAPONSEXPANDED$SAVED_CHAMBER_KEY, weaponsexpanded$encodeChamber(world, crossbow));
+            weaponsexpanded$setCustomNbt(crossbow, root);
+            crossbow.set(DataComponents.CHARGED_PROJECTILES, ChargedProjectiles.EMPTY);
+        } else {
+            weaponsexpanded$setCustomNbt(crossbow, root);
+        }
+
+        return true;
+    }
+
+    public void weaponsexpanded$finishAutoLoad(Level world, ItemStack crossbow, boolean loaded) {
+        if (world.isClientSide()) return;
+
+        CompoundTag root = weaponsexpanded$getOrCreateCustomNbt(crossbow);
+        int maxTotalShots = weaponsexpanded$getMaxTotalShots(crossbow);
+
+        weaponsexpanded$trimQueueToMax(root, maxTotalShots);
+
+        boolean toppingUp = root.contains(WEAPONSEXPANDED$SAVED_CHAMBER_KEY);
+
+        if (toppingUp && loaded && CrossbowItem.isCharged(crossbow)) {
+            weaponsexpanded$appendCurrentChamberToQueue(world, crossbow, root, maxTotalShots);
+        }
+
+        if (toppingUp) {
+            CompoundTag saved = root.getCompound(WEAPONSEXPANDED$SAVED_CHAMBER_KEY).orElse(null);
+            root.remove(WEAPONSEXPANDED$SAVED_CHAMBER_KEY);
+            weaponsexpanded$setCustomNbt(crossbow, root);
+
+            if (saved != null) {
+                weaponsexpanded$applyChamberToCrossbow(world, crossbow, saved);
+            } else if (!loaded) {
+                crossbow.set(DataComponents.CHARGED_PROJECTILES, ChargedProjectiles.EMPTY);
+            }
+        } else {
+            weaponsexpanded$setCustomNbt(crossbow, root);
+        }
+
+        weaponsexpanded$refreshLoadedVisual(crossbow);
+    }
+
+    private static void weaponsexpanded$updateLoadedVisual(ItemStack stack) {
+        ChargedProjectiles charged = stack.getOrDefault(DataComponents.CHARGED_PROJECTILES, ChargedProjectiles.EMPTY);
+        boolean hasExplosive = charged.items().stream().anyMatch(template -> template.item().value() == ModItems.EXPLOSIVE_ARROW);
+        weaponsexpanded$setModelFloat(stack, 0, hasExplosive ? 1.0F : 0.0F);
     }
 
     /**

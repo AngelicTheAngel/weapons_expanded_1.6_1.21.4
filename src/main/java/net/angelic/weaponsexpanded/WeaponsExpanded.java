@@ -131,7 +131,7 @@ public class WeaponsExpanded implements ModInitializer {
         if (!(stack.getItem() instanceof BastardSwordItem bastardSword)) return;
 
         bastardSword.toggleTwoHanded(stack);
-        if (player.getOffhandItem().getItem() instanceof ShieldItem shield && WeaponsExpandedConfig.get().longswordSwapSetsShieldCooldown) {
+        if (player.getOffhandItem().getItem() instanceof ShieldItem shield && WeaponsExpandedConfig.get().weaponModeSwapSetsShieldCooldown) {
             player.getCooldowns().addCooldown(shield.getDefaultInstance(), 20);
         }
         player.resetAttackStrengthTicker();
@@ -142,6 +142,9 @@ public class WeaponsExpanded implements ModInitializer {
         if (!(stack.getItem() instanceof WarhammerItem warhammer)) return;
 
         warhammer.toggleSharpSide(stack);
+        if (player.getOffhandItem().getItem() instanceof ShieldItem shield && WeaponsExpandedConfig.get().weaponModeSwapSetsShieldCooldown) {
+            player.getCooldowns().addCooldown(shield.getDefaultInstance(), 20);
+        }
         player.resetAttackStrengthTicker();
     }
 
@@ -150,6 +153,9 @@ public class WeaponsExpanded implements ModInitializer {
         if (!(stack.getItem() instanceof HalberdItem halberd)) return;
 
         halberd.togglePiercing(stack);
+        if (player.getOffhandItem().getItem() instanceof ShieldItem shield && WeaponsExpandedConfig.get().weaponModeSwapSetsShieldCooldown) {
+            player.getCooldowns().addCooldown(shield.getDefaultInstance(), 20);
+        }
         player.resetAttackStrengthTicker();
     }
 

@@ -147,14 +147,29 @@ public class ModEnchantmentProvider extends FabricDynamicRegistryProvider {
                 Enchantment.enchantment(
                                 Enchantment.definition(
                                         context.lookup(Registries.ITEM).getOrThrow(ModItemTags.CAPACITY_ENCHANTABLE),
-                                        4,
+                                        5,
                                         2,
-                                        Enchantment.dynamicCost(50, 0),
                                         Enchantment.dynamicCost(12, 20),
+                                        Enchantment.constantCost(50),
                                         4,
                                         EquipmentSlotGroup.HAND
                                 )
                         ));
+
+        register(context, ModEnchantments.AUTO_LOAD,
+                Enchantment.enchantment(
+                        Enchantment.definition(
+                                context.lookup(Registries.ITEM).getOrThrow(ItemTags.CROSSBOW_ENCHANTABLE),
+                                2,
+                                1,
+                                Enchantment.constantCost(20),
+                                Enchantment.constantCost(50),
+                                4,
+                                EquipmentSlotGroup.HAND
+                        )
+                )
+                        .exclusiveWith(context.lookup(Registries.ENCHANTMENT).getOrThrow(ModEnchantmentTags.CROSSBOW_LOAD_EXCLUSIVE_SET))
+        );
 
         register(context, ModEnchantments.NETHERS_SCOURGE,
                 Enchantment.enchantment(

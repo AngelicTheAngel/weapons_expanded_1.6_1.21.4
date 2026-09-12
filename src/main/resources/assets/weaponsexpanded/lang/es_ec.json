@@ -115,6 +115,7 @@
   "enchantment.weaponsexpanded.leech": "Sanguijuela",
   "enchantment.weaponsexpanded.cleaving": "Corte",
   "enchantment.weaponsexpanded.capacity": "Capacidad",
+  "enchantment.weaponsexpanded.auto_load": "Carga automática",
   "enchantment.weaponsexpanded.nethers_scourge": "El azote del Nether",
   "enchantment.weaponsexpanded.ends_bane": "La maldición de End",
 
@@ -125,6 +126,7 @@
   "enchantment.weaponsexpanded.leech.desc": "Otorga curación al bloquear daño, a cambio de mayor resistencia",
   "enchantment.weaponsexpanded.cleaving.desc": "Aumenta la duración del aturdimiento de los escudos cuando quedan inmovilizados",
   "enchantment.weaponsexpanded.capacity.desc": "Aumenta la capacidad del cargador de las ballestas de cadena",
+  "enchantment.weaponsexpanded.auto_load.desc": "Carga automáticamente las ballestas cuando están en tu inventario",
   "enchantment.weaponsexpanded.nethers_scourge.desc": "Aumenta el daño contra las criaturas del Nether, como los piglins y los blazes",
   "enchantment.weaponsexpanded.ends_bane.desc": "Aumenta el daño contra los monstruos del End, como los Endermen y los Shulkers",
 
@@ -171,7 +173,9 @@
   "config.weaponsexpanded.option.enableExtraDamageEnchantsVillager": "Activar encantamientos de daño adicional para los aldeanos",
   "config.weaponsexpanded.option.enableExtraDamageEnchantsLoot": "Habilitar encantamientos de daño adicional para el botín",
   "config.weaponsexpanded.option.dynamiteArrowDurabilityDamage": "Flecha explosiva Resistencia Daño",
-  "config.weaponsexpanded.option.longswordSwapSetsShieldCooldown": "El cambio a espada larga reinicia el tiempo de recarga del escudo",
+  "config.weaponsexpanded.option.weaponModeSwapSetsShieldCooldown": "El cambio de modo de arma establece el tiempo de recarga del escudo",
+  "config.weaponsexpanded.option.autoLoadFiringDelay": "Retardo de disparo con carga automática",
+  "config.weaponsexpanded.option.autoLoadChargeMultiplier": "Multiplicador de carga de carga automática",
 
   "config.weaponsexpanded.option.enableCustomLootTables.description": "Permite que aparezcan armas personalizadas en las estructuras",
   "config.weaponsexpanded.option.enableEntityMeleeEquipment.description": "Permite que los zombis y los piglins aparezcan con armas personalizadas",
@@ -191,7 +195,9 @@
   "config.weaponsexpanded.option.enableExtraDamageEnchantsVillager.description": "Permite que el Azote del Nether y la Pesadilla del Fin aparezcan en los intercambios con los aldeanos",
   "config.weaponsexpanded.option.enableExtraDamageEnchantsLoot.description": "Permite que El azote del Nether y La maldición del Fin aparezcan en el botín aleatorio",
   "config.weaponsexpanded.option.dynamiteArrowDurabilityDamage.description": "Modifica la cantidad de resistencia que consumen las flechas de dinamita al dispararlas",
-  "config.weaponsexpanded.option.longswordSwapSetsShieldCooldown.description": "Determina si al cambiar al modo Longsword se aplica un tiempo de recarga de 20 ticks a los escudos.",
+  "config.weaponsexpanded.option.weaponModeSwapSetsShieldCooldown.description": "Determina si, al salir del modo de espada larga, se aplica un tiempo de recarga de 20 ticks a los escudos",
+  "config.weaponsexpanded.option.autoLoadFiringDelay.description": "El retraso entre el disparo de una ballesta y el momento en que Auto Load comienza a recargar",
+  "config.weaponsexpanded.option.autoLoadChargeMultiplier.description": "Cuántas veces más tarda Auto Load en cargarse que un reproductor",
 
   "key.category.weaponsexpanded.general": "Armas ampliadas",
   "key.weaponsexpanded.toggle_bastard_sword_mode": "Cambiar el modo de arma"

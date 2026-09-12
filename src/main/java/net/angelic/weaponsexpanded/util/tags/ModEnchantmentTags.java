@@ -19,6 +19,12 @@ public final class ModEnchantmentTags {
                     Identifier.fromNamespaceAndPath(WeaponsExpanded.MOD_ID, "exclusive_set/bow_effects")
             );
 
+    public static final TagKey<Enchantment> CROSSBOW_LOAD_EXCLUSIVE_SET =
+            TagKey.create(
+                    Registries.ENCHANTMENT,
+                    Identifier.fromNamespaceAndPath(WeaponsExpanded.MOD_ID, "exclusive_set/crossbow_load")
+            );
+
     private ModEnchantmentTags() {
     }
 }
